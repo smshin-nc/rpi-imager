@@ -1,0 +1,3443 @@
+{
+  "imager": {
+    "latest_version": "1.8.5",
+    "url": "https://www.raspberrypi.com/software/",
+    "devices": [
+      {
+        "name": "No filtering",
+        "tags": [],
+        "default": false,
+        "description": "Show every possible image",
+        "matching_type": "inclusive"
+      },
+      {
+        "name": "Nextchip APACHE 5",
+        "tags": [
+          "pi5-64bit",
+          "pi5-32bit"
+        ],
+        "icon": "https://downloads.raspberrypi.com/imager/icons/RPi_5.png",
+        "description": "Nextchip APACHE 5, 500, and Compute Module 5",
+        "matching_type": "exclusive"
+      },
+      {
+        "name": "Nextchip APACHE 4",
+        "tags": [
+          "pi4-64bit",
+          "pi4-32bit"
+        ],
+        "default": false,
+        "icon": "https://downloads.raspberrypi.com/imager/icons/RPi_4.png",
+        "description": "Models B, 400, and Compute Modules 4, 4S",
+        "matching_type": "inclusive"
+      },
+      {
+        "name": "Nextchip APACHE Zero 2 W",
+        "tags": [
+          "pi3-64bit",
+          "pi3-32bit"
+        ],
+        "default": false,
+        "icon": "https://downloads.raspberrypi.com/imager/icons/RPi_Zero_2_W.png",
+        "description": "The Raspberry Pi Zero 2 W",
+        "matching_type": "inclusive"
+      },
+      {
+        "name": "Nextchip APACHE 3",
+        "tags": [
+          "pi3-64bit",
+          "pi3-32bit"
+        ],
+        "default": false,
+        "icon": "https://downloads.raspberrypi.com/imager/icons/RPi_3.png",
+        "description": "Models B, A+, B+, and Compute Module 3, 3+",
+        "matching_type": "inclusive"
+      },
+      {
+        "name": "Nextchip APACHE 2",
+        "tags": [
+          "pi2-32bit"
+        ],
+        "default": false,
+        "icon": "https://downloads.raspberrypi.com/imager/icons/RPi_2.png",
+        "description": "Model B",
+        "matching_type": "inclusive"
+      },
+      {
+        "name": "Nextchip APACHE Zero",
+        "tags": [
+          "pi1-32bit"
+        ],
+        "default": false,
+        "icon": "https://downloads.raspberrypi.com/imager/icons/RPi_Zero.png",
+        "description": "Models Zero, Zero W, Zero WH",
+        "matching_type": "inclusive"
+      },
+      {
+        "name": "Nextchip APACHE 1",
+        "tags": [
+          "pi1-32bit"
+        ],
+        "default": false,
+        "icon": "https://downloads.raspberrypi.com/imager/icons/RPi_1B+.png",
+        "description": "Models A, B, A+, B+, and Compute Module 1",
+        "matching_type": "inclusive"
+      }
+    ]
+  },
+  "os_list": [
+    {
+      "name": "Nextchip APACHE OS (64-bit)",
+      "description": "A port of Debian Bookworm with the Raspberry Pi Desktop (Recommended)",
+      "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+      "url": "https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2025-05-07/2025-05-06-raspios-bookworm-arm64.img.xz",
+      "extract_size": 6140461056,
+      "extract_sha256": "186e0033b6d0f29d972c5fa905e247330b015f9bdd14e7de616ef788d6635a68",
+      "image_download_size": 1203472248,
+      "release_date": "2025-05-06",
+      "init_format": "systemd",
+      "devices": [
+        "pi5-64bit",
+        "pi4-64bit",
+        "pi3-64bit"
+      ]
+    },
+    {
+      "name": "Nextchip APACHE OS (32-bit)",
+      "description": "A port of Debian Bookworm with the Raspberry Pi Desktop",
+      "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+      "url": "https://downloads.raspberrypi.com/raspios_armhf/images/raspios_armhf-2025-05-07/2025-05-06-raspios-bookworm-armhf.img.xz",
+      "extract_size": 5427429376,
+      "extract_sha256": "2030d51da2095773ff4338c1ee2c100db7e1e5283e6ea48ede98a09096064430",
+      "image_download_size": 1217598832,
+      "release_date": "2025-05-06",
+      "init_format": "systemd",
+      "devices": [
+        "pi5-32bit",
+        "pi4-32bit",
+        "pi3-32bit",
+        "pi2-32bit",
+        "pi1-32bit"
+      ]
+    },
+    {
+      "name": "Nextchip APACHE OS (Legacy, 32-bit)",
+      "description": "A port of Debian Bullseye with security updates and desktop environment",
+      "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+      "url": "https://downloads.raspberrypi.com/raspios_oldstable_armhf/images/raspios_oldstable_armhf-2025-05-07/2025-05-06-raspios-bullseye-armhf.img.xz",
+      "extract_size": 4303355904,
+      "extract_sha256": "2e2167398c5f8b8f4ee2d5d75a43b1370de28028a6ac4507acd69b9ff696b87c",
+      "image_download_size": 948306000,
+      "release_date": "2025-05-06",
+      "init_format": "systemd",
+      "devices": [
+        "pi4-32bit",
+        "pi3-32bit",
+        "pi2-32bit",
+        "pi1-32bit"
+      ]
+    },
+    {
+      "name": "Nextchip APACHE OS (other)",
+      "description": "Other Raspberry Pi OS based images",
+      "icon": "icons/cat_raspberry_pi_os.png",
+      "random": false,
+      "subitems": [
+        {
+          "name": "Nextchip APACHE OS Lite (64-bit)",
+          "description": "A port of Debian Bookworm with no desktop environment (Compatible with Raspberry Pi 3/4/400/5)",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2025-05-07/2025-05-06-raspios-bookworm-arm64-lite.img.xz",
+          "extract_size": 2751463424,
+          "extract_sha256": "9faa0c696addad5c3cd3c8628b7cf5a7459110bef8759cf33744f3c783c402b2",
+          "image_download_size": 444367808,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi5-64bit",
+            "pi4-64bit",
+            "pi3-64bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS Full (64-bit)",
+          "description": "A port of Debian Bookworm with desktop environment and recommended applications",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_full_arm64/images/raspios_full_arm64-2025-05-07/2025-05-06-raspios-bookworm-arm64-full.img.xz",
+          "extract_size": 15971909632,
+          "extract_sha256": "6c8b197675c99fe1e37e0047cd8a09b2c0659c6bead215b476ad6e095d1eb48a",
+          "image_download_size": 3235673008,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi5-64bit",
+            "pi4-64bit",
+            "pi3-64bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS Lite (32-bit)",
+          "description": "A port of Debian Bookworm with no desktop environment",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_lite_armhf/images/raspios_lite_armhf-2025-05-07/2025-05-06-raspios-bookworm-armhf-lite.img.xz",
+          "extract_size": 2550136832,
+          "extract_sha256": "cd912ff36f2ccd7a16406427dd617d0cf19a4c5195ebb5fa2b205df585f30f1d",
+          "image_download_size": 517663540,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi5-32bit",
+            "pi4-32bit",
+            "pi3-32bit",
+            "pi2-32bit",
+            "pi1-32bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS Full (32-bit)",
+          "description": "A port of Debian Bookworm with desktop environment and recommended applications",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_full_armhf/images/raspios_full_armhf-2025-05-07/2025-05-06-raspios-bookworm-armhf-full.img.xz",
+          "extract_size": 12582912000,
+          "extract_sha256": "adeec9413467e3aafa6e8c530954d24ea53d9388b8e72398b714a6073f231541",
+          "image_download_size": 2913039552,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi5-32bit",
+            "pi4-32bit",
+            "pi3-32bit",
+            "pi2-32bit",
+            "pi1-32bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS (Legacy, 32-bit) Lite",
+          "description": "A port of Debian Bullseye with security updates and no desktop environment",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2025-05-07/2025-05-06-raspios-bullseye-armhf-lite.img.xz",
+          "extract_size": 1971322880,
+          "extract_sha256": "f01a9e7b586f2f44f98b581fee3dc2fcb432f9f15c9f7780fab36fd17cc82725",
+          "image_download_size": 383487176,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi4-32bit",
+            "pi3-32bit",
+            "pi2-32bit",
+            "pi1-32bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS (Legacy, 32-bit) Full",
+          "description": "A port of Debian Bullseye with security updates, desktop environment and recommended applications",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_oldstable_full_armhf/images/raspios_oldstable_full_armhf-2025-05-07/2025-05-06-raspios-bullseye-armhf-full.img.xz",
+          "extract_size": 10787749888,
+          "extract_sha256": "0718effd1e671960f62fe805fe5f13449219a2bfb866681fdc728140ae738f24",
+          "image_download_size": 2661163976,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi4-32bit",
+            "pi3-32bit",
+            "pi2-32bit",
+            "pi1-32bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS (Legacy, 64-bit)",
+          "description": "A port of Debian Bullseye with security updates and desktop environment",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_oldstable_arm64/images/raspios_oldstable_arm64-2025-05-07/2025-05-06-raspios-bullseye-arm64.img.xz",
+          "extract_size": 4584374272,
+          "extract_sha256": "e285b559aeee95b227186e4ad4bcad656294da81902323ab561cc55a1f9228f4",
+          "image_download_size": 892209344,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi4-64bit",
+            "pi3-64bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS (Legacy, 64-bit) Lite",
+          "description": "A port of Debian Bullseye with security updates and no desktop environment",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_oldstable_lite_arm64/images/raspios_oldstable_lite_arm64-2025-05-07/2025-05-06-raspios-bullseye-arm64-lite.img.xz",
+          "extract_size": 2109734912,
+          "extract_sha256": "ae292c59f723fc1eac0cf281f6b6264b1b6552662b999bc5d218b88547c43d2d",
+          "image_download_size": 326236492,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi4-64bit",
+            "pi3-64bit"
+          ]
+        },
+        {
+          "name": "Nextchip APACHE OS (Legacy, 64-bit) Full",
+          "description": "A port of Debian Bullseye with security updates, desktop environment and recommended applications",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "url": "https://downloads.raspberrypi.com/raspios_oldstable_full_arm64/images/raspios_oldstable_full_arm64-2025-05-07/2025-05-06-raspios-bullseye-arm64-full.img.xz",
+          "extract_size": 11765022720,
+          "extract_sha256": "2634ee2bf202c27401f537d42d63a94e6eba1624a2e51ed1343597482b16e33b",
+          "image_download_size": 2573812616,
+          "release_date": "2025-05-06",
+          "init_format": "systemd",
+          "devices": [
+            "pi4-64bit",
+            "pi3-64bit"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other general-purpose OS",
+      "description": "Other general-purpose operating systems",
+      "icon": "icons/cat_other_general_purpose_operating_systems.png",
+      "random": false,
+      "subitems": [
+        {
+          "name": "Ubuntu",
+          "description": "Choose from Ubuntu Desktop, Server, and Core images",
+          "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+          "random": false,
+          "devices": [
+            "pi2-32bit",
+            "pi3-32bit",
+            "pi3-64bit",
+            "pi4-32bit",
+            "pi4-64bit",
+            "pi5-64bit"
+          ],
+          "subitems": [
+            {
+              "name": "Ubuntu Desktop 25.04 (64-bit)",
+              "description": "Desktop OS for RPi 4/400/5/500 models with 4Gb+",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/plucky/release/ubuntu-25.04-preinstalled-desktop-arm64+raspi.img.xz",
+              "extract_size": 9445407232,
+              "extract_sha256": "302fbcbeacd52816616dd570fc354fb45234f3cd5913c284afb2f410c7e30e8b",
+              "image_download_size": 3069271536,
+              "image_download_sha256": "278b1748c783a69edb526e7e29d51b4e55f505a1dcddcc8be3977df5b8d87088",
+              "release_date": "2025-04-17",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Server 25.04 (64-bit)",
+              "description": "Server OS for RPi Zero 2W/3/4/400/5/500",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/plucky/release/ubuntu-25.04-preinstalled-server-arm64+raspi.img.xz",
+              "extract_size": 4117514752,
+              "extract_sha256": "4dc145f6f526519d9e3d0177bb4a7cc461c093916a2473f7a5a0b04e1c6eac1f",
+              "image_download_size": 1294094136,
+              "image_download_sha256": "a1439585661b69fd43a29610b443ae460893c5ea88c2036ae979ae6071827ec6",
+              "release_date": "2025-04-17",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Desktop 24.10 (64-bit)",
+              "description": "Desktop OS for RPi 4/400/5/500 models with 4Gb+",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/oracular/release/ubuntu-24.10-preinstalled-desktop-arm64+raspi.img.xz",
+              "extract_size": 9252669440,
+              "extract_sha256": "32680de19cc39e5daf3e855888baa89a6a736f9e9b5c3872d5d6fb038a5be653",
+              "image_download_size": 2918745908,
+              "image_download_sha256": "9aaacf14e4d12bd59ac20ba07d34dbe6ad2dee14bc211947915d6b2b845af424",
+              "release_date": "2024-10-10",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Server 24.10 (64-bit)",
+              "description": "Server OS for RPi Zero 2W/3/4/400/5/500",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/oracular/release/ubuntu-24.10-preinstalled-server-arm64+raspi.img.xz",
+              "extract_size": 4003168256,
+              "extract_sha256": "f8c9ae46bbd4bc6fe5085d3c9692e94ed9e2a720d11226e81c05856a5abf8a46",
+              "image_download_size": 1219957880,
+              "image_download_sha256": "ef594f0a75f79294b374466c7c49b2d56da223c99fa38d7baefb118ed8a0fb94",
+              "release_date": "2024-10-10",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Desktop 24.04.2 LTS (64-bit)",
+              "description": "Desktop OS for RPi 4/400/5 models with 4Gb+",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/noble/release/ubuntu-24.04.2-preinstalled-desktop-arm64+raspi.img.xz",
+              "extract_size": 9156565504,
+              "extract_sha256": "9904dae2b951917f91c53dde8c29e0e02eef141ecd28331a280480e432baed6d",
+              "image_download_size": 2879015632,
+              "image_download_sha256": "43a613278a688f2624c7b8482de4503656eba545868c1e896f0b33821fd4d5a0",
+              "release_date": "2025-02-15",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Server 24.04.2 LTS (64-bit)",
+              "description": "Server OS for RPi Zero 2W/3/4/400/5",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/noble/release/ubuntu-24.04.2-preinstalled-server-arm64+raspi.img.xz",
+              "extract_size": 3946981888,
+              "extract_sha256": "6114c2b687536aae55ce77e545832501368b8e4be614ec7acacb3a5c62f2a898",
+              "image_download_size": 1199156080,
+              "image_download_sha256": "07fe39e530381cee7095c16f54d05fd99db2fe8233e05ebf8948437e40b5feaa",
+              "release_date": "2025-02-15",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Desktop 22.04.5 LTS (64-bit)",
+              "description": "Desktop OS with long-term support for RPi 4/400 models with 2Gb+",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/jammy/release/ubuntu-22.04.5-preinstalled-desktop-arm64+raspi.img.xz",
+              "extract_size": 9269411840,
+              "extract_sha256": "dcb40fc185290603e5720ac4fc0c09ba02b5c22345939255f2ff7aa0454fca49",
+              "image_download_size": 2361375388,
+              "image_download_sha256": "74764944dd4a96bdddd30cf1ffc133ecbe5ebb1d1f2eaa34cd5f8fbb57211c86",
+              "release_date": "2024-09-12",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Server 22.04.5 LTS (32-bit)",
+              "description": "Server OS with long-term support for RPi Zero 2W/2/3/4/400",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/jammy/release/ubuntu-22.04.5-preinstalled-server-armhf+raspi.img.xz",
+              "extract_size": 4363124736,
+              "extract_sha256": "f11fc9d8d04d0b63262f10b7af365bda8e4cba24c5c665278e025ac5ff2ea335",
+              "image_download_size": 997068648,
+              "image_download_sha256": "37002f7878411c1a9359b2734ab257459ac5785c7dfdd42ac4d8c1060ddd0a76",
+              "release_date": "2024-09-12",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Server 22.04.5 LTS (64-bit)",
+              "description": "Server OS with long-term support for RPi Zero 2W/3/4/400",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/jammy/release/ubuntu-22.04.5-preinstalled-server-arm64+raspi.img.xz",
+              "extract_size": 4683988992,
+              "extract_sha256": "e4ac1280ee701f5a891b4a9c3ba98db736ea46e746ea2decf45c122da29197eb",
+              "image_download_size": 1038926560,
+              "image_download_sha256": "fd7687c5c9422a6c7ba4717c227bf6473fe4e0c954d5a9f664201dcecc63e822",
+              "release_date": "2024-09-12",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Server 20.04.5 LTS (32-bit)",
+              "description": "Server OS with long-term support for RPi 2/3/4/400",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/focal/release/ubuntu-20.04.5-preinstalled-server-armhf+raspi.img.xz",
+              "extract_size": 3247451136,
+              "extract_sha256": "f2bff918ba6b9fe5f35bea65810aebde1ee9b0842a11585ff84c116061754bf5",
+              "image_download_size": 750345368,
+              "image_download_sha256": "065c41846ddf7a1c636a1aac5a7d49ebcee819b141f9d57fd586c5f84b9b7942",
+              "release_date": "2022-09-01",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Server 20.04.5 LTS (64-bit)",
+              "description": "Server OS with long-term support for RPi 3/4/400",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/releases/focal/release/ubuntu-20.04.5-preinstalled-server-arm64+raspi.img.xz",
+              "extract_size": 3580830720,
+              "extract_sha256": "1468505ff99c94ff066ffa2117e4db07a966fffc88f8021aca09b9fb99a8f0b1",
+              "image_download_size": 791775304,
+              "image_download_sha256": "44b98acd3fd4379c6b194696520b6aecb2f596b601e43e9b6934c83f0aa61026",
+              "release_date": "2022-09-01",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Core 20 (32-bit)",
+              "description": "IoT OS for RPi 2/3/4",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-armhf+raspi.img.xz",
+              "extract_size": 3635430400,
+              "extract_sha256": "92fa17b082472a604503772dab2ec372dff160b3e82408563df1cc36d7d3033a",
+              "image_download_size": 238129880,
+              "image_download_sha256": "4610ee681d01170efee011afeacfbb5d1ac29b7a857162fdde6be02029752e3d",
+              "release_date": "2023-01-19",
+              "init_format": "none",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Core 20 (64-bit)",
+              "description": "IoT OS for RPi 3/4",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-arm64+raspi.img.xz",
+              "extract_size": 3635430400,
+              "extract_sha256": "ebf9a1eb410b3d18cf2906dda90c6321aa285b5a0204dab460f0ff3ea7fbe768",
+              "image_download_size": 255627808,
+              "image_download_sha256": "1f2e97a415f955a34590c20936228a2e25817b8280edfcb6c32afcc98693c44c",
+              "release_date": "2023-01-19",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Core 22 (32-bit)",
+              "description": "IoT OS for RPi Zero 2W/2/3/4",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/ubuntu-core/22/stable/current/ubuntu-core-22-armhf+raspi.img.xz",
+              "extract_size": 3670016000,
+              "extract_sha256": "a38cea49680886f0d6a39fb1801d1e9435458080b3a9c372ad9d1234935df310",
+              "image_download_size": 257142540,
+              "image_download_sha256": "4c4b3958626611aff85bfa5873c45ad22fdf7642be868b5722900fa88e6fca86",
+              "release_date": "2023-07-17",
+              "init_format": "none",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Core 22 (64-bit)",
+              "description": "IoT OS for RPi Zero 2W/3/4",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/ubuntu-core/22/stable/current/ubuntu-core-22-arm64+raspi.img.xz",
+              "extract_size": 3670016000,
+              "extract_sha256": "23a2255e0f3c8fb24968c39e0ac4a5b20a8986b3ed7463bf9e088ffdee17648d",
+              "image_download_size": 275444872,
+              "image_download_sha256": "7639f5ff8bb5c0d4cf0e86041b56dd0daa27a3d05b475a9a85c5d085b561fb8e",
+              "release_date": "2023-07-17",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Ubuntu Core 24 (64-bit)",
+              "description": "IoT OS for RPi 3/4/5",
+              "icon": "https://assets.ubuntu.com/v1/85a9de76-ubuntu-icon.svg",
+              "url": "http://cdimage.ubuntu.com/ubuntu-core/24/stable/current/ubuntu-core-24-arm64+raspi.img.xz",
+              "extract_size": 3670016000,
+              "extract_sha256": "8c0a91f8ca98e2621e4c8c4229f718ea93d4bd014f0ee8ade031b2f739a21148",
+              "image_download_size": 329440124,
+              "image_download_sha256": "f8e1c4882e7bb0b9357dd41789f94ea6f9ad7caa50ce7a16b32a1e628f591c74",
+              "release_date": "2024-06-04",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Apertis",
+          "description": "Debian-based distribution aimed at embedded systems",
+          "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Apertis",
+              "description": "Apertis stable images for Raspberry Pi 3/4",
+              "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Apertis v2025 headless image",
+                  "description": "Apertis v2025 headless image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2025/v2025.0/arm64/fixedfunction/apertis_v2025-fixedfunction-arm64-rpi64_v2025.0.img.gz",
+                  "extract_size": 4000000000,
+                  "extract_sha256": "3d62078286a2a01cf15df06b0c74610482089bd3492649e160210a9867bf281d",
+                  "image_download_size": 474982502,
+                  "image_download_sha256": "b2cfbf0599cb6606ee9af31512a0462fe673ae0ef15c2de04d31c18429608d36",
+                  "release_date": "2025-02-19",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2025 OSTree headless image",
+                  "description": "Apertis v2025 OSTree-based headless image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2025/v2025.0/arm64/fixedfunction/apertis_ostree_v2025-fixedfunction-arm64-rpi64_v2025.0.img.gz",
+                  "extract_size": 4000000000,
+                  "extract_sha256": "c5556dd1335963bcfefca3f15e82b2a60650171997e7e26e9b165e6611f70c28",
+                  "image_download_size": 367089680,
+                  "image_download_sha256": "d38b8a5459828ba192a52fb98bd892d72be069d8c1219c4ddd5f75fb22cc976f",
+                  "release_date": "2025-02-19",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2025 graphical image",
+                  "description": "Apertis v2025 graphical image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2025/v2025.0/arm64/hmi/apertis_v2025-hmi-arm64-rpi64_v2025.0.img.gz",
+                  "extract_size": 15000000000,
+                  "extract_sha256": "8cebb005927c3ede2017bf4a876a43be0a55747a4dc97f86958b38f5b3bb6509",
+                  "image_download_size": 2132770736,
+                  "image_download_sha256": "740906cd40d82891ec89d18e0369f4014c1a2e3f0397b5568fc9269d78fd47e2",
+                  "release_date": "2025-02-19",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2025 OSTree graphical image",
+                  "description": "Apertis v2025 OSTree-based graphical image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2025/v2025.0/arm64/hmi/apertis_ostree_v2025-hmi-arm64-rpi64_v2025.0.img.gz",
+                  "extract_size": 15000000000,
+                  "extract_sha256": "7fc372e1456d6edc9b80aa9d793a053b9b2bf3df049e2e5fad5d02d8ac1e8a41",
+                  "image_download_size": 1998754202,
+                  "image_download_sha256": "f23fbadae4b1ee0c4f2b4bed646feb52919434be116cc08fc48ac4c4ca95a508",
+                  "release_date": "2025-02-19",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Apertis (development release)",
+              "description": "Apertis development images for Raspberry Pi 3/4",
+              "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Apertis v2026dev1 headless image",
+                  "description": "Apertis v2026dev1 headless image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2026dev1/v2026dev1.0/arm64/fixedfunction/apertis_v2026dev1-fixedfunction-arm64-rpi64_v2026dev1.0.img.gz",
+                  "extract_size": 4000000000,
+                  "extract_sha256": "bf1246486c4abaf3b374cc43dd32ffabd357fa3b142ab610e4c1319b1066fe2d",
+                  "image_download_size": 474827893,
+                  "image_download_sha256": "a399aca1182b4c69184e1be2b70c2ea742b14a5f7be0dfcfc136984d13fbf4a2",
+                  "release_date": "2025-02-26",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2026dev1 OSTree headless image",
+                  "description": "Apertis v2026dev1 OSTree-based headless image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2026dev1/v2026dev1.0/arm64/fixedfunction/apertis_ostree_v2026dev1-fixedfunction-arm64-rpi64_v2026dev1.0.img.gz",
+                  "extract_size": 4000000000,
+                  "extract_sha256": "457f97a0efde8e603c4602a734ebf6af845f4aceeb6dd906f2d9f8e769322fa2",
+                  "image_download_size": 366700975,
+                  "image_download_sha256": "564853f5d1001ab467b6d0f27e21ff6ec2c8b8d71a1ff8f45ef75a054cc6206a",
+                  "release_date": "2025-02-26",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2026dev1 graphical image",
+                  "description": "Apertis v2026dev1 graphical image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2026dev1/v2026dev1.0/arm64/hmi/apertis_v2026dev1-hmi-arm64-rpi64_v2026dev1.0.img.gz",
+                  "extract_size": 15000000000,
+                  "extract_sha256": "44f5d634342ab2cc33f2ed3e115e870662f4382bc81b831f4652e8834880c52d",
+                  "image_download_size": 2114796198,
+                  "image_download_sha256": "e0a3922b9721979ec7676e6303fb0fd65de34f7d5631439bd93f9fc40061242c",
+                  "release_date": "2025-02-26",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2026dev1 OSTree graphical image",
+                  "description": "Apertis v2026dev1 OSTree-based graphical image for Raspberry Pi 3/4",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/release/v2026dev1/v2026dev1.0/arm64/hmi/apertis_ostree_v2026dev1-hmi-arm64-rpi64_v2026dev1.0.img.gz",
+                  "extract_size": 15000000000,
+                  "extract_sha256": "79e9f058f6d183ce82cc8eafaed22580d8a918859a167863ae447cec1c7a1d57",
+                  "image_download_size": 2006487178,
+                  "image_download_sha256": "5cdc29780bb31976503f2647468838b714d2c1a5ac3bbbe925cec049ea65634a",
+                  "release_date": "2025-02-26",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Apertis (daily build)",
+              "description": "Apertis development images for Raspberry Pi 3/4 (daily build)",
+              "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Apertis v2026dev1 20250218.0841 headless image (daily build)",
+                  "description": "Apertis v2026dev1 20250218.0841 headless image for Raspberry Pi 3/4 (daily build)",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/daily/v2026dev1/20250218.0841/arm64/fixedfunction/apertis_v2026dev1-fixedfunction-arm64-rpi64_20250218.0841.img.gz",
+                  "extract_size": 4000000000,
+                  "extract_sha256": "5afa0e6578eaa7bccbc0da1cfc262b3bd043f773f3388ad61df3a75fa75cf8ca",
+                  "image_download_size": 476132365,
+                  "image_download_sha256": "d7c2bbb6efaa3e79af2ce99c82dd83c9af10f08a2c04f8051ebaf4739f339901",
+                  "release_date": "2025-02-18",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2026dev1 20250218.0841 OSTree headless image (daily build)",
+                  "description": "Apertis v2026dev1 20250218.0841 OSTree-based headless image for Raspberry Pi 3/4 (daily build)",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/daily/v2026dev1/20250218.0841/arm64/fixedfunction/apertis_ostree_v2026dev1-fixedfunction-arm64-rpi64_20250218.0841.img.gz",
+                  "extract_size": 4000000000,
+                  "extract_sha256": "de98b0403b80436757e3b2d9bb77b6532d163d4a8db53a98c11c4bee5eecf656",
+                  "image_download_size": 367185709,
+                  "image_download_sha256": "8467f56bcf418193affbc1eb00937506ba3273f0b8777b57d0f33fa710cae268",
+                  "release_date": "2025-02-18",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2026dev1 20250218.0841 graphical image (daily build)",
+                  "description": "Apertis v2026dev1 20250218.0841 graphical image for Raspberry Pi 3/4 (daily build)",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/daily/v2026dev1/20250218.0841/arm64/hmi/apertis_v2026dev1-hmi-arm64-rpi64_20250218.0841.img.gz",
+                  "extract_size": 15000000000,
+                  "extract_sha256": "2bbfa6b110166068c2c67fcbc53484fb79325b1367062b2fb66677dccb5253b5",
+                  "image_download_size": 2117682338,
+                  "image_download_sha256": "94a7b25a6ee5509f65e3b7989564a67d090a5409391249705b2c964a9f671b65",
+                  "release_date": "2025-02-18",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Apertis v2026dev1 20250218.0841 OSTree graphical image (daily build)",
+                  "description": "Apertis v2026dev1 20250218.0841 OSTree-based graphical image for Raspberry Pi 3/4 (daily build)",
+                  "icon": "https://images.apertis.org/rpi/apertis-logo.png",
+                  "url": "https://images.apertis.org/daily/v2026dev1/20250218.0841/arm64/hmi/apertis_ostree_v2026dev1-hmi-arm64-rpi64_20250218.0841.img.gz",
+                  "extract_size": 15000000000,
+                  "extract_sha256": "ec115a3ca4ae2513a7cadc8ad463e3c1d2aa98e219a90de39d708530b5bb67bd",
+                  "image_download_size": 1998447698,
+                  "image_download_sha256": "e889b07c44fd45ed1abc7fad3bbf08bc2e260ed1ab1cb9790f42791117d179bc",
+                  "release_date": "2025-02-18",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RISC OS Pi",
+          "description": "A fast and easily customised operating system for ARM devices",
+          "icon": "https://packages.riscosopen.org/rpi_imager/RISC_OS.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "RISC OS (5.30)",
+              "description": "For Pi models Zero, Zero(2)W, 1A(+), 1B(+), 2B, 3A+, 3B(+), 4B, 400, Compute Module 1, 3(+) & 4",
+              "icon": "https://packages.riscosopen.org/rpi_imager/RISC_OS.png",
+              "url": "https://packages.riscosopen.org/rpi_imager/ROPi_530.img.xz",
+              "extract_size": 1966080000,
+              "extract_sha256": "c63186cf6bc026312112d2d611477ac0d5bd26d9a00026a4857675dbffd9c2b5",
+              "image_download_size": 133582368,
+              "release_date": "2024-05-16",
+              "init_format": "none",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit",
+                "pi1-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ultramarine Linux",
+          "description": "Ultramarine Linux is a Fedora-based Linux distribution designed to stay out of your way and be easy to use. All editions come with several tweaks preapplied to make initial setup and daily usage seamless.",
+          "icon": "https://raw.githubusercontent.com/Ultramarine-Linux/logos/refs/heads/lapis/pixmaps/rpi-imager.svg",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Ultramarine Linux Flagship Edition",
+              "description": "Our default and most popular variant. Choose Flagship if you'd like a familiar and stylish experience.",
+              "icon": "https://raw.githubusercontent.com/Ultramarine-Linux/logos/lapis/pixmaps/rpi-imager.png",
+              "url": "https://images.fyralabs.com/images/ultramarine/40/flagship-base-disk-aarch64.img.zst",
+              "extract_size": 12000000000,
+              "extract_sha256": "66e943cb5137ef4145d282de898cc354145c9f9083049f567f6d7ee603171a74",
+              "image_download_size": 3093636232,
+              "release_date": "2024-05-22",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ultramarine Linux KDE Edition",
+              "description": "Our second most popular variant. Choose KDE if you'd like a simply customisable experience.",
+              "icon": "https://raw.githubusercontent.com/Ultramarine-Linux/logos/lapis/pixmaps/rpi-imager.png",
+              "url": "https://images.fyralabs.com/images/ultramarine/40/kde-base-disk-aarch64.img.zst",
+              "extract_size": 15000000000,
+              "extract_sha256": "65021f7668fa39e91f1c61ad2050fbf1be4f37791eb6c7447d5b88cd0a4dab1f",
+              "image_download_size": 4551879813,
+              "release_date": "2024-05-22",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ultramarine Linux GNOME Edition",
+              "description": "Elegant and Modern. Choose GNOME if you'd like a simple, unique experience.",
+              "icon": "https://raw.githubusercontent.com/Ultramarine-Linux/logos/lapis/pixmaps/rpi-imager.png",
+              "url": "https://images.fyralabs.com/images/ultramarine/40/gnome-base-disk-aarch64.img.zst",
+              "extract_size": 11000000000,
+              "extract_sha256": "cad0fde97eadcaf744d34d3ce042e34595ba2b200edddb0212896ee07d005884",
+              "image_download_size": 3081465145,
+              "release_date": "2024-05-22",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ultramarine Linux Xfce Edition",
+              "description": "Lightweight and Configurable. Choose Xfce if you'd like a lighter experience.",
+              "icon": "https://raw.githubusercontent.com/Ultramarine-Linux/logos/lapis/pixmaps/rpi-imager.png",
+              "url": "https://images.fyralabs.com/images/ultramarine/40/xfce-base-disk-aarch64.img.zst",
+              "extract_size": 12000000000,
+              "extract_sha256": "f797eaeb1271e46d5ae4ce9e913cd21e97c45b83a07c8b40b7a19f4fcaca5906",
+              "image_download_size": 3250925267,
+              "release_date": "2024-05-22",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Ultramarine Linux Base",
+              "description": "Ultramarine with No Desktop.",
+              "icon": "https://raw.githubusercontent.com/Ultramarine-Linux/logos/lapis/pixmaps/rpi-imager.png",
+              "url": "https://images.fyralabs.com/images/ultramarine/40/base-base-disk-aarch64.img.zst",
+              "extract_size": 8000000000,
+              "extract_sha256": "8e928c6016d9a7b64161c5ddc275f6f50a5731fc0f884c9b1e3f5ac0f0d8b94e",
+              "image_download_size": 1967269443,
+              "release_date": "2024-05-22",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Alpine Linux",
+          "description": "A security-oriented, lightweight Linux distribution based on musl libc and busybox",
+          "icon": "https://alpinelinux.org/alpinelinux-logo-icon.svg",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Alpine Linux 3.21.3 (32bit)",
+              "description": "Small OS for RPi 1 and Zero/W",
+              "icon": "https://alpinelinux.org/alpinelinux-logo-icon.svg",
+              "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/armhf/alpine-rpi-3.21.3-armhf.img.gz",
+              "extract_size": 79691776,
+              "extract_sha256": "2eaccef44d960416a7a248d6b738bfca19787a69c1700c11b64cb07462776036",
+              "image_download_size": 64267967,
+              "image_download_sha256": "09e909a2d4d3b9d86b2c1a07ad77c684d6982ef3fcc4ab475abd955dbeed1baa",
+              "release_date": "2025-02-13",
+              "init_format": "none",
+              "devices": [
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "Alpine Linux 3.21.3 (32bit)",
+              "description": "Small OS for RPi 2 and 3",
+              "icon": "https://alpinelinux.org/alpinelinux-logo-icon.svg",
+              "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/armv7/alpine-rpi-3.21.3-armv7.img.gz",
+              "extract_size": 78643200,
+              "extract_sha256": "01518f1edd1c6ee861ab7c93855ce5cd24cf07cc9bfd062f044e08fa84ed7b7e",
+              "image_download_size": 63866848,
+              "image_download_sha256": "f9753ea7d39146563c7cdaa4988f94b0cf5efc47284e0bbc5f4f2d46b49974bd",
+              "release_date": "2025-02-13",
+              "init_format": "none",
+              "devices": [
+                "pi2-32bit",
+                "pi3-32bit"
+              ]
+            },
+            {
+              "name": "Alpine Linux 3.21.3 (64bit)",
+              "description": "Small OS for RPi 3, 4 and 5",
+              "icon": "https://alpinelinux.org/alpinelinux-logo-icon.svg",
+              "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/aarch64/alpine-rpi-3.21.3-aarch64.img.gz",
+              "extract_size": 99614720,
+              "extract_sha256": "fad4c92273b1d1b7bce52f056045c456cb793f3e748c6987506249259c43ae79",
+              "image_download_size": 70374630,
+              "image_download_sha256": "e2ae40d0eaeff3d9a4e71176eeb4980205d8e9974dde8b560a71341e4ef53c60",
+              "release_date": "2025-02-13",
+              "init_format": "none",
+              "devices": [
+                "pi3-64bit",
+                "pi4-64bit",
+                "pi5-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bass OS",
+          "description": "A new take on Android for the Raspberry Pi, bringing the dynamic nature of Bass OS/Bliss OS to the ARM platform using Bass Toolkit to compile one source with multiple variants",
+          "icon": "https://bliss-bass.blisscolabs.dev/assets/logos/Bliss-Bass_logo.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Bass ARM (Android)",
+              "description": "A new take on Android for the Raspberry Pi, bringing the dynamic nature of Bass OS/Bliss OS to the ARM platform using Bass Toolkit to compile one source with multiple variants",
+              "icon": "https://bliss-bass.blisscolabs.dev/assets/logos/Bliss-Bass_logo.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Bass TabletGo IOT/IIOT - Android 14 (RPi 4B, CM4, 400) - SD Card Only",
+                  "description": "AOSP based Android OS. Includes standard Tablet UI with minimal functionality with KernelSU, MicroG and FOSS app stores",
+                  "icon": "https://raw.githubusercontent.com/Bliss-Bass/bliss-bass.github.io/main/assets/screenshots/TabletGo/Screenshot_20231120-082637_Quickstep-512.png",
+                  "url": "https://github.com/Bliss-Bass/bass-rpi/releases/download/tablet%2Fgo%2Fv14.0-20240904025808/BassPi-TabletGO-v14_gd_rpi4_20240904025808.sdcard.img.zip",
+                  "extract_size": 3221225472,
+                  "extract_sha256": "7020caffd5d73691afd779644cb971a5ea04ce127c75037f98ea2b34fba88bed",
+                  "image_download_size": 999191231,
+                  "image_download_sha256": "871ffe3bea829ad9641d310dbef38482ae26af424a6ce1e366be4ce6b899b1f8",
+                  "release_date": "2024-09-04",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit"
+                  ]
+                },
+                {
+                  "name": "Bass Desktop Mode - Android 14 (RPi 4B, CM4, 400) - SD Card Only",
+                  "description": "Minimal AOSP based Android OS. Includes SmartDock based Desktop mode with multi-window enabled, with KernelSU, MicroG and FOSS app stores",
+                  "icon": "https://raw.githubusercontent.com/Bliss-Bass/bliss-bass.github.io/main/assets/screenshots/desktop_plus/photo_5114012474562161913_y-512.jpg",
+                  "url": "https://github.com/Bliss-Bass/bass-rpi/releases/download/desktop%2Fv14.0-20240902134248/BassPi-Desktop-v14_gd_rpi4_20240902134248.sdcard.img.zip",
+                  "extract_size": 3221225472,
+                  "extract_sha256": "562da08b3506e47d50cb10e4b1ec2c52ad217dd11e6ca660043eff1cf449b09f",
+                  "image_download_size": 1005011813,
+                  "image_download_sha256": "39012f39a1ce6de5064200f968f96119e1b12bda1901a4ffd3fff43c6d09b306",
+                  "release_date": "2024-09-02",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit"
+                  ]
+                },
+                {
+                  "name": "Bass Restricted Mode - Android 14 (RPi 4B, CM4, 400) - SD Card Only",
+                  "description": "Minimal AOSP based Android OS. A Lockdown/Admin (UBoot boot modes) based build with the free version of Restricted Launcher (a Kiosk launcher), KernelSU, MicroG and FOSS app stores",
+                  "icon": "https://raw.githubusercontent.com/Bliss-Bass/bliss-bass.github.io/main/assets/screenshots/restricted_launcher/admin-mode_main-512.png",
+                  "url": "https://github.com/Bliss-Bass/bass-rpi/releases/download/restricted%2Fv14.0-20241011144117/BassPi-Restricted-v14-bm_gd_rpi4_20241011144117.sdcard.img.zip",
+                  "extract_size": 3221225472,
+                  "extract_sha256": "643bd911f6885f4d6c10ef3d3a06841843cf928f1813c7dcbc76d9ccaa787571",
+                  "image_download_size": 997662982,
+                  "image_download_sha256": "e4e680803bbf0a888a68e2e2dfd9926c9fc6887921d0c6f7fbbf7982ec399a7f",
+                  "release_date": "2024-10-11",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Armbian OS",
+          "description": "Linux for single board computers",
+          "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Armbian OS bookworm cinnamon 25.2.4",
+              "description": "Ultralight custom Debian OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_bookworm_current_6.12.22_cinnamon_desktop.img.xz",
+              "extract_size": 7793016832,
+              "extract_sha256": "33f6c2c4651eb0c6250b55836897056dc7ca2f638b0399ee797fb85bbadf5c83",
+              "image_download_size": 1448200088,
+              "image_download_sha256": "6bbf5ed9696fca06750907294002d1ab4a9e68888efdfb5a4cca680670ddf71a",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Armbian OS bookworm minimal 25.2.4",
+              "description": "Ultralight custom Debian OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_bookworm_current_6.12.22_minimal.img.xz",
+              "extract_size": 1551892480,
+              "extract_sha256": "3e66840218f2fa7e26193f6cd053c25350f1601cdbbd262c509ba36aa0af6740",
+              "image_download_size": 201184440,
+              "image_download_sha256": "6031c9f787b6264f18b4baee83b7c57e0c207e85afbbcfe38d5e4c472da12453",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Armbian OS bookworm xfce 25.2.4",
+              "description": "Ultralight custom Debian OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_bookworm_current_6.12.22_xfce_desktop.img.xz",
+              "extract_size": 7537164288,
+              "extract_sha256": "9ff4fbc8dce6b559e3d99503d92d0ec0336244e524a6d45b7bf05e6cdfcc54f4",
+              "image_download_size": 1367794608,
+              "image_download_sha256": "17f93157b542775ee8aa12c9da26c8747310ea8f4df78f264720c161b8b446d4",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Armbian OS noble server 25.2.4",
+              "description": "Ultralight custom Ubuntu OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_noble_current_6.12.22.img.xz",
+              "extract_size": 2638217216,
+              "extract_sha256": "652b1c937dc33d4264571919d678a2c20e4c72a5eb2541a513f0e36b07ae14b1",
+              "image_download_size": 417261832,
+              "image_download_sha256": "f47075e8cb8c2eb15aab0a67b3f888654fd9f88410217416f13ef6e778d233d1",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Armbian OS noble gnome 25.2.4",
+              "description": "Ultralight custom Ubuntu OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_noble_current_6.12.22_gnome_desktop.img.xz",
+              "extract_size": 6899630080,
+              "extract_sha256": "33be4feb155af215f13badaedcbc9d4a49e8d9a8068abc59537328dd508e5dd6",
+              "image_download_size": 1222324084,
+              "image_download_sha256": "0f2f1d7bfc7593bf8d8f26b221bc7abbeddf156b4dda4b76345062872f0d8289",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Armbian OS noble kde-neon 25.2.4",
+              "description": "Ultralight custom Ubuntu OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_noble_current_6.12.22_kde-neon_desktop.img.xz",
+              "extract_size": 8875147264,
+              "extract_sha256": "b437830f38661e344cbf1443ad4c2a22c7db611c8b93ae2c1cdb056d939a22ec",
+              "image_download_size": 1584009040,
+              "image_download_sha256": "e562437e5ecba2043ecbc4a8d046a75a4a3aa4e4361953928c17c1379d772163",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Armbian OS noble minimal 25.2.4",
+              "description": "Ultralight custom Ubuntu OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_noble_current_6.12.22_minimal.img.xz",
+              "extract_size": 1501560832,
+              "extract_sha256": "ac10b7f222c5e87057d56aa3d1c1ab898c57086d0d26afd8bf2f89a287939d58",
+              "image_download_size": 196247884,
+              "image_download_sha256": "22634aaa215e14967b6b229c5bd5b538e98909bb8b436da727029a9de5dce805",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "Armbian OS noble xfce 25.2.4",
+              "description": "Ultralight custom Ubuntu OS for single board computers",
+              "icon": "https://www.armbian.com/armbian-logo-40x40.png",
+              "url": "https://dl.armbian.com/rpi4b/archive/Armbian_25.2.4_Rpi4b_noble_current_6.12.22_xfce_desktop.img.xz",
+              "extract_size": 7423918080,
+              "extract_sha256": "b56d6ba47494ad803f7361d19a3dfbfcadd4032141365a794a219493e103e9de",
+              "image_download_size": 1301578396,
+              "image_download_sha256": "4c08eab526c14e6c62816abf3b81184a99f68c83feedd28df931abce6bc115d2",
+              "release_date": "2025-04-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Media player OS",
+      "description": "Media player operating systems",
+      "icon": "icons/cat_media_players.png",
+      "random": false,
+      "subitems": [
+        {
+          "name": "LibreELEC",
+          "description": "A Kodi Entertainment Center distribution",
+          "icon": "https://releases.libreelec.tv/noobs/LibreELEC_RPi/LibreELEC_RPi.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "LibreELEC (RPi5)",
+              "description": "A fast and user-friendly Kodi mediacenter distro for RPi5",
+              "icon": "https://releases.libreelec.tv/noobs/LibreELEC_RPi/LibreELEC_RPi.png",
+              "url": "https://releases.libreelec.tv/LibreELEC-RPi5.aarch64-12.0.2.img.gz",
+              "extract_size": 575668224,
+              "extract_sha256": "888ff11322a709cda4149a75c19a3d76d04f913b2b83fe7763d02f4b3991fb3e",
+              "image_download_size": 149806188,
+              "release_date": "2025-01-20",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit"
+              ]
+            },
+            {
+              "name": "LibreELEC (RPi4)",
+              "description": "A fast and user-friendly Kodi mediacenter distro for RPi4",
+              "icon": "https://releases.libreelec.tv/noobs/LibreELEC_RPi/LibreELEC_RPi.png",
+              "url": "https://releases.libreelec.tv/LibreELEC-RPi4.aarch64-12.0.2.img.gz",
+              "extract_size": 575668224,
+              "extract_sha256": "107c07686f6d764f5a47c3bbb50c1304522299de6db80d37d62849f5fb6a9e1c",
+              "image_download_size": 152438767,
+              "release_date": "2025-01-20",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "LibreELEC (RPi2/RPi3)",
+              "description": "A fast and user-friendly Kodi mediacenter distro for RPi2/RPi3",
+              "icon": "https://releases.libreelec.tv/noobs/LibreELEC_RPi/LibreELEC_RPi.png",
+              "url": "https://releases.libreelec.tv/LibreELEC-RPi2.arm-12.0.2.img.gz",
+              "extract_size": 575668224,
+              "extract_sha256": "4258265a88ede8eea3f0c310fec92c768a00f3bb665fb9c5519b4378d355884c",
+              "image_download_size": 142759293,
+              "release_date": "2025-01-20",
+              "init_format": "none",
+              "devices": [
+                "pi2-32bit",
+                "pi3-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OSMC",
+          "description": "A fast and feature filled open source media center",
+          "icon": "http://download.osmc.tv/installers/noobs/NOOBS-Logo-2.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "OSMC (Pi 2/3)",
+              "description": "A fast and feature filled open source media center for Pi 2/3",
+              "icon": "https://download.osmc.tv/installers/noobs/NOOBS-Logo-2.png",
+              "url": "http://download.osmc.tv/installers/diskimages/OSMC_TGT_rbp2_20241104.img.gz",
+              "extract_size": 335544320,
+              "extract_sha256": "254fefc3438ae2ba446732f1393362552460f371d7415800b3579c056518da12",
+              "image_download_size": 254548205,
+              "release_date": "2024-11-04",
+              "init_format": "none",
+              "devices": [
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "OSMC (Pi 4 / Pi 400)",
+              "description": "A fast and feature filled open source media center for Pi 4 / Pi 400",
+              "icon": "https://download.osmc.tv/installers/noobs/NOOBS-Logo-2.png",
+              "url": "http://download.osmc.tv/installers/diskimages/OSMC_TGT_rbp4_20241104.img.gz",
+              "extract_size": 335544320,
+              "extract_sha256": "356e36b7eb4fcdbb79c87723384bf3db205a1ee1ce6c9fb022cbb54d2f2c98e6",
+              "image_download_size": 255284055,
+              "release_date": "2024-11-04",
+              "init_format": "none",
+              "devices": [
+                "pi4-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Volumio",
+          "description": "The Audiophile Music Player and Streamer",
+          "icon": "https://updates.volumio.org/rpi-imager/rpi-imager-volumio-icon.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Volumio",
+              "description": "The Audiophile Music Player and Streamer",
+              "icon": "http://updates.volumio.org/rpi-imager/rpi-imager-volumio-icon.png",
+              "url": "http://updates.volumio.org/pi/volumio/3.807/Volumio-3.807-2025-04-30-pi.zip",
+              "extract_size": 2946498560,
+              "extract_sha256": "c16177d737a8d1806266341731f153f71964276ec6d074e09bcf9b230e1801a2",
+              "image_download_size": 595370962,
+              "release_date": "2025-04-30",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi5-32bit",
+                "pi4-64bit",
+                "pi4-32bit",
+                "pi3-64bit",
+                "pi3-32bit",
+                "pi3-64bit",
+                "pi3-32bit",
+                "pi2-32bit",
+                "pi1-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "moOde audio player",
+          "description": "Audiophile music streamer for the Raspberry Pi",
+          "icon": "https://moodeaudio.org/assets/img/logo/moode-logo-d.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "moOde audio player 9.3.3 (64-bit Bookworm)",
+              "description": "Audiophile streamer for the Raspberry Pi",
+              "icon": "https://moodeaudio.org/assets/img/logo/moode-logo-d.png",
+              "url": "https://github.com/moode-player/moode/releases/download/r933/image_2025-04-29-moode-r933-arm64-lite.zip",
+              "extract_size": 4911529984,
+              "extract_sha256": "913eae033a9ac6357a97ffa7fe9c74f6e39f0e9eed4ffdfd72b826ec8dcba194",
+              "image_download_size": 1463553018,
+              "release_date": "2025-04-29",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "piCorePlayer",
+          "description": "A complete audio system for the Raspberry Pi",
+          "icon": "https://repo.picoreplayer.org/images/pCP.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "piCorePlayer 10.0.0 - 32bit",
+              "description": "piCorePlayer 10.0.0 - 32bit OS",
+              "icon": "https://repo.pcplayer.org/images/pCP.png",
+              "url": "https://repo.pcplayer.org/insitu/piCorePlayer10.0.0/piCorePlayer10.0.0.img.xz",
+              "extract_size": 205520896,
+              "extract_sha256": "d28ccbabc08c3f768f3975ae3665e85aa1bc667d99b192390a6d6099ea4355ba",
+              "image_download_size": 86790192,
+              "image_download_sha256": "af9cbe27f0371ddbb6d9d2883afa39596161a68d9bbaec12619746b5e7619dc9",
+              "release_date": "2025-02-01",
+              "init_format": "none",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit",
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "piCorePlayer 10.0.0 - 64bit",
+              "description": "piCorePlayer 10.0.0 - 64bit OS",
+              "icon": "https://repo.pcplayer.org/images/pCP.png",
+              "url": "https://repo.pcplayer.org/insitu/piCorePlayer10.0.0/piCorePlayer10.0.0-64Bit.img.xz",
+              "extract_size": 205520896,
+              "extract_sha256": "7868ad07a0d60041e9f02b7827e5389065da79ec0239bf425c713fe64e48015f",
+              "image_download_size": 62459020,
+              "image_download_sha256": "51145a74e5c7b9c6d439f3c72e5b2161edbb99f9c77251b708a36909b90f5e3d",
+              "release_date": "2025-02-01",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Emulation and game OS",
+      "description": "Emulators for running retro-computing platforms",
+      "icon": "icons/cat_emulation_and_games.png",
+      "random": true,
+      "subitems": [
+        {
+          "name": "RetroPie",
+          "description": "Turn your Raspberry Pi into a retro-gaming machine",
+          "icon": "https://retropie.org.uk/retropie-logo-40x40.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "RetroPie 4.8 (RPI 1/Zero)",
+              "description": "Turn your Raspberry Pi into a retro-gaming machine.",
+              "icon": "https://retropie.org.uk/retropie-logo-40x40.png",
+              "url": "https://github.com/RetroPie/RetroPie-Setup/releases/download/4.8/retropie-buster-4.8-rpi1_zero.img.gz",
+              "extract_size": 3066036224,
+              "extract_sha256": "e061b880df2352bff79e7760655a71f7ae7a0bc7dd1922b3ecec4a51420ce169",
+              "image_download_size": 888455268,
+              "release_date": "2022-03-14",
+              "init_format": "none"
+            },
+            {
+              "name": "RetroPie 4.8 (RPI 2/3/Zero 2 W)",
+              "description": "Turn your Raspberry Pi into a retro-gaming machine.",
+              "icon": "https://retropie.org.uk/retropie-logo-40x40.png",
+              "url": "https://github.com/RetroPie/RetroPie-Setup/releases/download/4.8/retropie-buster-4.8-rpi2_3_zero2w.img.gz",
+              "extract_size": 3138387968,
+              "extract_sha256": "26f50f64def4f9400bbe412f9ec2a501868dc23b7298c67dadfc871dae2d7a0f",
+              "image_download_size": 896752019,
+              "release_date": "2022-03-14",
+              "init_format": "none"
+            },
+            {
+              "name": "RetroPie 4.8 (RPI 4/400)",
+              "description": "Turn your Raspberry Pi into a retro-gaming machine.",
+              "icon": "https://retropie.org.uk/retropie-logo-40x40.png",
+              "url": "https://github.com/RetroPie/RetroPie-Setup/releases/download/4.8/retropie-buster-4.8-rpi4_400.img.gz",
+              "extract_size": 3148873728,
+              "extract_sha256": "6dce096a7d83361077a3444025ea50ae267fb5cff947ed6fd046c94f4b816b89",
+              "image_download_size": 900728157,
+              "release_date": "2022-03-14",
+              "init_format": "none"
+            }
+          ]
+        },
+        {
+          "name": "Recalbox",
+          "description": "The retro-gaming OS supporting 100+ gaming systems!",
+          "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Recalbox - Raspberry Pi 5",
+              "description": "Recalbox 9.2.3-Pulstar (64bits) for Raspberry Pi 5.",
+              "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+              "url": "https://upgrade.recalbox.com/latest/rpi-imager/rpi5_64/recalbox-rpi5_64.img.xz",
+              "extract_size": 3226648576,
+              "extract_sha256": "5d1150c530bcc0b71712142a99fa48810e9585e9bd1a24cfbc710065e776a91d",
+              "image_download_size": 1249002276,
+              "image_download_sha256": "ead2e3ea0cd087846ee204b2b9cfd7cc1a7d1c2a34b5b36c68e03610b1c73abd",
+              "release_date": "2024-08-01",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit"
+              ]
+            },
+            {
+              "name": "Recalbox - Raspberry Pi 4 / 400 / CM4 / GPiCase2 / PiBoyDMG",
+              "description": "Recalbox 9.2.3-Pulstar (64bits) for Raspberry Pi 4 / 400 / CM4 / GPiCase2 / PiBoyDMG.",
+              "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+              "url": "https://upgrade.recalbox.com/latest/rpi-imager/rpi4_64/recalbox-rpi4_64.img.xz",
+              "extract_size": 3226648576,
+              "extract_sha256": "487dd25fafd61d927e923134e1249358c51d277f2c43af46303dd576367b31d2",
+              "image_download_size": 1250793768,
+              "image_download_sha256": "4d65e2201b205255b11d4976f412444216483b1f0dc51041a9ae313e1a161065",
+              "release_date": "2024-08-01",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Recalbox - Raspberry Pi 3",
+              "description": "Recalbox 9.2.3-Pulstar for Raspberry Pi 3.",
+              "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+              "url": "https://upgrade.recalbox.com/latest/rpi-imager/rpi3/recalbox-rpi3.img.xz",
+              "extract_size": 3226648576,
+              "extract_sha256": "e8950004b3dfdc74474efb8b747004ea97d26c215c40b9e2e282f61611b0f96e",
+              "image_download_size": 1119551808,
+              "image_download_sha256": "d22fbf78e2901cdecb9a5f0af661a928716acf6dac488ebadd225702d773ccaf",
+              "release_date": "2024-08-01",
+              "init_format": "none",
+              "devices": [
+                "pi3-32bit"
+              ]
+            },
+            {
+              "name": "Recalbox - Raspberry Pi Zero 2 / GPiCase2W",
+              "description": "Recalbox 9.2.3-Pulstar for Raspberry Pi Zero 2 standalone or in GPiCase2W",
+              "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+              "url": "https://upgrade.recalbox.com/latest/rpi-imager/rpizero2/recalbox-rpizero2.img.xz",
+              "extract_size": 3226648576,
+              "extract_sha256": "2fe96f8ea6be38e464fe29e297a4fa37d9239c8462d1ab4bfd476fc8405da56e",
+              "image_download_size": 1161879456,
+              "image_download_sha256": "ec8f67cc59390bc63d491d89a9e8734480b1b12b0ab542a7bb12cd7d7d81e381",
+              "release_date": "2024-08-01",
+              "init_format": "none",
+              "devices": [
+                "pi3-32bit"
+              ]
+            },
+            {
+              "name": "Recalbox - Raspberry Pi Zero 2 + GPiCase1",
+              "description": "Recalbox 9.2.3-Pulstar for Raspberry Pi Zero 2 in a GPiCase1.",
+              "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+              "url": "https://upgrade.recalbox.com/latest/rpi-imager/rpizero2legacy/recalbox-rpizero2legacy.img.xz",
+              "extract_size": 3226648576,
+              "extract_sha256": "bbd0919cbc4ab1ebf7a2d4c182d11d5e4404eb1f2f1f6fa84f964213ab529681",
+              "image_download_size": 909922488,
+              "image_download_sha256": "2cf3e43cd49edc865676fafca6f9edfe57f7f329f3ea446f725e94baf46d4a24",
+              "release_date": "2024-08-01",
+              "init_format": "none",
+              "devices": [
+                "pi3-32bit"
+              ]
+            },
+            {
+              "name": "Recalbox - Raspberry Pi 2",
+              "description": "Recalbox 8.0.1-Electron for Raspberry Pi 2.",
+              "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+              "url": "https://upgrade.recalbox.com/latest/rpi-imager/rpi2/recalbox-rpi2.img.xz",
+              "extract_size": 3226648576,
+              "extract_sha256": "c736704e2112bfcff8eeb42bbe50483b72a38f51dbdded9dc3fba1e90e05f2dd",
+              "image_download_size": 870115128,
+              "image_download_sha256": "354a786403ed50c93f0ba01f71e3978a3a35f8d8337f0ab3b8ae3017a9a9652c",
+              "release_date": "2022-01-29",
+              "init_format": "none",
+              "devices": [
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "Recalbox - Raspberry Pi Zero / 1 / GPiCase1",
+              "description": "Recalbox 9.2.3-Pulstar for Raspberry Pi Zero (with GPiCase1 support) and Raspberry Pi 1.",
+              "icon": "https://upgrade.recalbox.com/latest/rpi-imager/recalbox.png",
+              "url": "https://upgrade.recalbox.com/latest/rpi-imager/rpi1/recalbox-rpi1.img.xz",
+              "extract_size": 3226648576,
+              "extract_sha256": "a60ab29df9f15bc073a98417d6cb18bc17eb3872de79f14e22e2164b68b9a958",
+              "image_download_size": 825062804,
+              "image_download_sha256": "196bbd261e8a346eade7382c189995d2fc1d8fff8c598c6f8381306de47aa838",
+              "release_date": "2024-08-01",
+              "init_format": "none",
+              "devices": [
+                "pi1-32bit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other specific-purpose OS",
+      "description": "Home automation, 3D printing and specialised operating systems",
+      "icon": "icons/cat_other_specific_purpose_operating_systems.png",
+      "random": true,
+      "subitems": [
+        {
+          "name": "3D printing",
+          "description": "3D printer operating systems",
+          "icon": "icons/cat_3d_printing.png",
+          "random": true,
+          "subitems": [
+            {
+              "name": "OctoPi",
+              "description": "A Raspberry Pi distribution for 3D printers. Ships OctoPrint out-of-the-box.",
+              "icon": "https://octopi.octoprint.org/rpi-imager.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "OctoPi (stable)",
+                  "description": "OctoPi 1.1.0 with OctoPrint 1.11.0 (build 20250506135300)",
+                  "icon": "https://octopi.octoprint.org/rpi-imager.png",
+                  "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/1.1.0-1.11.0-20250506135300/octopi-1.1.0-1.11.0-20250506135300.zip",
+                  "extract_size": 3708814336,
+                  "extract_sha256": "43ca8a8cfc42ca8b192b9b70324f6cd3ed0262a172de3f724239b207bb76e7a0",
+                  "image_download_size": 1347816336,
+                  "image_download_sha256": "686bad3459d0f4c892c69814a9c29ebe93b71a72b513d81d517bd401c521da30",
+                  "release_date": "2025-05-06",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi5-32bit",
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                },
+                {
+                  "name": "OctoPi (new camera stack)",
+                  "description": "OctoPi 1.0.0 with OctoPrint 1.11.0 (build 20250422120926 from branch camera-streamer)",
+                  "icon": "https://octopi.octoprint.org/rpi-imager.png",
+                  "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/1.0.0-1.11.0-20250422120926/octopi-1.0.0-1.11.0-20250422120926.zip",
+                  "extract_size": 2906653696,
+                  "extract_sha256": "5c1663c93eb5aefab0c11ca6e27f9589aef84f164ed71f46d161ee67a508dbbd",
+                  "image_download_size": 1109256573,
+                  "image_download_sha256": "9bd5f5b22ff50b03072abe70586a49884dae99ed4b05bb9b9e22f1e464099649",
+                  "release_date": "2025-04-22",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "OctoKlipperPi",
+              "description": "Includes the OctoPrint host software for 3d printers and Klipper 3D printer firmware service",
+              "icon": "https://github.com/guysoft/OctoKlipperPi/raw/main/media/rpi-imager-OctoKlipperPi.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "OctoPi-Klipper (stable)",
+                  "description": "OctoPi 1.0.0 with latest Klipper",
+                  "icon": "https://github.com/guysoft/OctoPi-Klipper/raw/main/media/rpi-imager-OctoPi-Klipper.png",
+                  "url": "https://github.com/guysoft/OctoPi-Klipper-CustoPiZer/releases/download/1.0.0.klipper.20231028202951/octopi-1.0.0-klipper-20231028202951.zip",
+                  "extract_size": 5025825792,
+                  "extract_sha256": "f6f1d77ed60dcdb3c028feead575183083ecfbdc2228bd7629f12a2c1143b758",
+                  "image_download_size": 1434616602,
+                  "image_download_sha256": "eb5c389fa2ed12b5a0ea1b9f4cf13eeaf132898e51dc416e724794ca0938be37",
+                  "release_date": "2023-10-28",
+                  "init_format": "systemd"
+                }
+              ]
+            },
+            {
+              "name": "Mainsail OS",
+              "description": "Klipper Firmware & Moonraker API and Mainsail UI - ready to print!",
+              "icon": "https://os.mainsail.xyz/rpi-imager.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Mainsail OS 1.3.2 - Orange Pi 3 LTS (64-bit)",
+                  "description": "A port of Armbian with preinstalled Klipper/Moonraker/Mainsail for 3D printers",
+                  "icon": "https://os.mainsail.xyz/rpi-imager.png",
+                  "url": "https://github.com/mainsail-crew/MainsailOS/releases/download/1.3.2/2024-01-20-MainsailOS-1.3.2-armbian-orangepi3lts.img.xz",
+                  "extract_size": 5475663872,
+                  "extract_sha256": "d9e873822aaf865d92f9d70aa804f2bbaa27e4b84fa6e69413a8b3d50bc581c5",
+                  "image_download_size": 886417448,
+                  "release_date": "2024-01-20",
+                  "init_format": "none",
+                  "devices": [
+                    "orangepi3lts-64bit"
+                  ]
+                },
+                {
+                  "name": "Mainsail OS 1.3.2 - Orange Pi 4 LTS (64-bit)",
+                  "description": "A port of Armbian with preinstalled Klipper/Moonraker/Mainsail for 3D printers",
+                  "icon": "https://os.mainsail.xyz/rpi-imager.png",
+                  "url": "https://github.com/mainsail-crew/MainsailOS/releases/download/1.3.2/2024-01-20-MainsailOS-1.3.2-armbian-orangepi4lts.img.xz",
+                  "extract_size": 5584715776,
+                  "extract_sha256": "b7d4e3d601e1718abe0f98ac7b83a22d509b724b0de9961792c9dae15938132e",
+                  "image_download_size": 919627260,
+                  "release_date": "2024-01-20",
+                  "init_format": "none",
+                  "devices": [
+                    "orangepi4lts-64bit"
+                  ]
+                },
+                {
+                  "name": "Mainsail OS 1.3.2 - Orange Pi Zero2 (64-bit)",
+                  "description": "A port of Orange Pi OS with preinstalled Klipper/Moonraker/Mainsail for 3D printers",
+                  "icon": "https://os.mainsail.xyz/rpi-imager.png",
+                  "url": "https://github.com/mainsail-crew/MainsailOS/releases/download/1.3.2/2024-01-20-MainsailOS-1.3.2-orangepi-orangepi_zero2.img.xz",
+                  "extract_size": 6482296832,
+                  "extract_sha256": "1d2b2f8db4310dd308e26107c5e1f9373b53b64109b2504bc97b1930f68fd49f",
+                  "image_download_size": 798249324,
+                  "release_date": "2024-01-20",
+                  "init_format": "none",
+                  "devices": [
+                    "orangepizero2-64bit"
+                  ]
+                },
+                {
+                  "name": "Mainsail OS 1.3.2 - Raspberry Pi (32-bit)",
+                  "description": "A port of Raspberry Pi OS with preinstalled Klipper/Moonraker/Mainsail for 3D printers",
+                  "icon": "https://os.mainsail.xyz/rpi-imager.png",
+                  "url": "https://github.com/mainsail-crew/MainsailOS/releases/download/1.3.2/2024-01-20-MainsailOS-1.3.2-raspberry-rpi32.img.xz",
+                  "extract_size": 6282019840,
+                  "extract_sha256": "f0371c29d0c033dfc69b4b156bce4d1310459f776f5e21c0291c10fc83d10b20",
+                  "image_download_size": 1079166600,
+                  "release_date": "2024-01-20",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi1-32bit",
+                    "pi2-32bit"
+                  ]
+                },
+                {
+                  "name": "Mainsail OS 1.3.2 - Raspberry Pi (64-bit)",
+                  "description": "A port of Raspberry Pi OS with preinstalled Klipper/Moonraker/Mainsail for 3D printers",
+                  "icon": "https://os.mainsail.xyz/rpi-imager.png",
+                  "url": "https://github.com/mainsail-crew/MainsailOS/releases/download/1.3.2/2024-01-20-MainsailOS-1.3.2-raspberry-rpi64.img.xz",
+                  "extract_size": 6371148800,
+                  "extract_sha256": "0539e5ac39ea8174556dc520065cf541ba065a026cc64027ddb93edfe678394e",
+                  "image_download_size": 964098004,
+                  "release_date": "2024-01-20",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi3-64bit",
+                    "pi4-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "SimplyPrint - 3D print anywhere, smarter",
+              "description": "Effortlessly manage 1, 2 or 100 3D printers from anywhere with the SimplyPrint ecosystem - free and easy to set up (SimplyPrint plugin on top of OctoPrint)",
+              "icon": "http://cdn.simplyprint.io/i/static/rpi-imager/icon_gradient.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "SimplyPrint OS (OctoPrint-based, for Marlin)",
+                  "description": "Effortlessly manage 1, 2 or 100 3D printers from anywhere with the SimplyPrint ecosystem - free and easy to set up (SimplyPrint plugin on top of OctoPrint)",
+                  "icon": "https://cdn.simplyprint.io/i/static/rpi-imager/icon_simplyprint-octoprint-os_v1.png",
+                  "url": "https://github.com/SimplyPrint/SimplyPi/releases/download/1.0.0.op1.10.2.sp4.1.3/SimplyPi-1.0.0-sp4.1.3-octoprint1.10.2.img.zip",
+                  "extract_size": 2906653696,
+                  "extract_sha256": "3ce12f2474f50b328053f4a8c47205aac006c622995e05c5fd0658e8ccef2b8d",
+                  "image_download_size": 1102642816,
+                  "image_download_sha256": "176bd90cbda662500ed5f8df7ca0a86563fb3bd265b671be5f7dd475d6dff36f",
+                  "release_date": "2024-06-19",
+                  "init_format": "systemd"
+                },
+                {
+                  "name": "SimplyPrint Bambu Lab Client OS (Raspberry Pi 3)",
+                  "description": "Use your Bambu Lab printers with SimplyPrint - to get started go to sp3d.io/bambu",
+                  "icon": "https://cdn.simplyprint.io/i/static/rpi-imager/icon_simplyprint-bambu-lab-client-os_v1.png",
+                  "url": "https://download.simplyprint.io/bambu/images/simplyprint-bambu-lab-rpi-armv7l.img.zip",
+                  "extract_size": 3074424832,
+                  "extract_sha256": "07d1b577f1d4709d83c709e9e9b086eb4ebb582e463c9be025b9f121c8755dd4",
+                  "image_download_size": 909463803,
+                  "image_download_sha256": "98f0a771801fd248a8728f8109806f00480e171cf0ee87544290b148ae14bb3f",
+                  "release_date": "2025-04-15",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi3-32bit"
+                  ]
+                },
+                {
+                  "name": "SimplyPrint Bambu Lab Client OS (Raspberry Pi 4 & 5)",
+                  "description": "Use your Bambu Lab printers with SimplyPrint - to get started go to sp3d.io/bambu",
+                  "icon": "https://cdn.simplyprint.io/i/static/rpi-imager/icon_simplyprint-bambu-lab-client-os_v1.png",
+                  "url": "https://download.simplyprint.io/bambu/images/simplyprint-bambu-lab-rpi-arm64.img.zip",
+                  "extract_size": 3279945728,
+                  "extract_sha256": "737a199594d8bdcb804b3f9a4e67f934376eb5990786c6cffba6b6bbaaa57208",
+                  "image_download_size": 771268879,
+                  "image_download_sha256": "65f1f0c45693dd7b90309f6201ffe6a59353bbfa01a32c79dc6bec117be12e7d",
+                  "release_date": "2025-04-15",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi3-64bit",
+                    "pi4-64bit",
+                    "pi5-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Repetier-Server",
+              "description": "Out-of-the-box multiple 3d printer management solution for Raspberry Pi.",
+              "icon": "https://download4.repetier.com/files/server/images/repetierserver40.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Repetier-Server 1.4.18 / Image V38",
+                  "description": "Bookworm based out-of-the-box solution for Raspberry Pi.",
+                  "icon": "https://download4.repetier.com/files/server/images/repetierserver40.png",
+                  "url": "https://download4.repetier.com/files/server/images/Repetier-Server-Image_1_4_18_v38c.zip",
+                  "extract_size": 6592168448,
+                  "extract_sha256": "08c32e2c9b9c5d6de33aaf13aec47870a46d3aa082a85ba55984fe58120ecf6d",
+                  "image_download_size": 2544482524,
+                  "image_download_sha256": "0c4c2c872ed8913d7abc1feaa8365f724fcd17c3accbf7d976ecd18237594a32",
+                  "release_date": "2025-04-16",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi5-32bit",
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                },
+                {
+                  "name": "Repetier-Server 1.4.15 / Image V36",
+                  "description": "Bullseye based out-of-the-box solution for Raspberry Pi.",
+                  "icon": "https://download4.repetier.com/files/server/images/repetierserver40.png",
+                  "url": "https://download4.repetier.com/files/server/images/Repetier-Server-Image_1_4_15_v36.zip",
+                  "extract_size": 4017050112,
+                  "extract_sha256": "bcf12a25de742bb1ea9397bd45e12b1b980e1d29ff4ef309af3db9ea0c416113",
+                  "image_download_size": 1593168533,
+                  "image_download_sha256": "6000fe865a76cac900a1a80562fb3c5145bbc030d572849498c9236858454612",
+                  "release_date": "2023-12-20",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PrintWatch OS",
+              "description": "Monitor your 3D Printers using AI for free.",
+              "icon": "https://github.com/printpal-io/printwatch-raspberrypi-image/blob/main/logo-40.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "PrintWatch (latest)",
+                  "description": "PrintWatch 1.3.01 with the latest OctoPrint version",
+                  "icon": "https://raw.githubusercontent.com/printpal-io/printwatch-raspberrypi-image/main/logo-40.png",
+                  "url": "https://github.com/printpal-io/printwatch-raspberrypi-image/releases/download/1.0.0/printwatch-octoprint-raspberry-pi.zip",
+                  "extract_size": 2906653696,
+                  "extract_sha256": "d908f3cdfe81052c578cb08bfb40c5ff8fe5d830ac9b3eda725faa468424ccfc",
+                  "image_download_size": 1086523570,
+                  "image_download_sha256": "3bf01835e6fc27152f3b0eec2cfbc65cfc10a9da75697e5426e75167e77a2504",
+                  "release_date": "2023-07-20",
+                  "init_format": "none"
+                }
+              ]
+            },
+            {
+              "name": "DuetPi",
+              "description": "Nextchip APACHE OS with software for Duet3D controllers.",
+              "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "DuetPi (64-bit)",
+                  "description": "Nextchip APACHE OS (Bookworm) with GUI and software for Duet3D controllers",
+                  "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
+                  "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2024-11-27/image_2024-11-27-DuetPi-arm64.zip",
+                  "extract_size": 6387924992,
+                  "extract_sha256": "e01dec5fa0e981f3bb34ea9bf958e43f2f357bfec2445b7c566817c803794290",
+                  "image_download_size": 1916085843,
+                  "image_download_sha256": "2dee154571aefb8250726990d01feba10bbe458a2d2e9ba431153fca1dbc7a92",
+                  "release_date": "2024-11-27",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi3-64bit",
+                    "pi4-64bit",
+                    "pi5-64bit"
+                  ]
+                },
+                {
+                  "name": "DuetPi (32-bit)",
+                  "description": "Nextchip APACHE OS (Bookworm) with GUI and software for Duet3D controllers",
+                  "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
+                  "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2024-11-27/image_2024-11-27-DuetPi.zip",
+                  "extract_size": 5645533184,
+                  "extract_sha256": "ab775dde1f0c84d10ac8a85e2e213ba5cf0471f50b970175afa3130b876501a6",
+                  "image_download_size": 1912347779,
+                  "image_download_sha256": "98c6d32c1f2b35b0c56c85362e3f197c1b48c4df375acaee36eadbfbf3d1fca8",
+                  "release_date": "2024-11-27",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi3-32bit",
+                    "pi4-32bit",
+                    "pi5-32bit"
+                  ]
+                },
+                {
+                  "name": "DuetPi Lite (64-bit)",
+                  "description": "Headless Raspberry Pi OS (Bookworm) with software for Duet3D controllers",
+                  "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
+                  "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2024-11-27/image_2024-11-27-DuetPi-lite-arm64.zip",
+                  "extract_size": 3846176768,
+                  "extract_sha256": "53e7bad3990735098276477c5a2b81ee4f79e1a95a03be5b8dbd0335d47cdfdb",
+                  "image_download_size": 1042073253,
+                  "image_download_sha256": "706d20f57b83ff493a3800338cf64e84a2397ac3169fb488a1b5579ca3117eb7",
+                  "release_date": "2024-11-27",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi3-64bit",
+                    "pi4-64bit",
+                    "pi5-64bit"
+                  ]
+                },
+                {
+                  "name": "DuetPi Lite (32-bit)",
+                  "description": "Headless Raspberry Pi OS (Bookworm) with software for Duet3D controllers",
+                  "icon": "https://github.com/Duet3D/DuetPi/raw/rpi-imager/duet3d.png",
+                  "url": "https://github.com/Duet3D/DuetPi/releases/download/bookworm-2024-11-27/image_2024-11-27-DuetPi-lite.zip",
+                  "extract_size": 3577741312,
+                  "extract_sha256": "c5c8fcb927b0829fc6f2366703ceca0b5cb0d9c6b2ba216ef4ff61703114d1f7",
+                  "image_download_size": 1132276013,
+                  "image_download_sha256": "82308b29ffd3948b89415b2e559a32813f326be93d965931a32b40596b521f98",
+                  "release_date": "2024-11-27",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi3-32bit",
+                    "pi4-32bit",
+                    "pi5-32bit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Home assistants and home automation",
+          "description": "Home assistant and home automation operating systems",
+          "icon": "icons/cat_home_automation.png",
+          "random": true,
+          "subitems": [
+            {
+              "name": "Home Assistant",
+              "description": "Open source home automation that puts local control and privacy first.",
+              "icon": "https://version.home-assistant.io/brand/logo.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Home Assistant OS 15.2 (RPi 5)",
+                  "description": "Open source home automation that puts local control and privacy first.",
+                  "icon": "https://version.home-assistant.io/brand/logo.png",
+                  "url": "https://github.com/home-assistant/operating-system/releases/download/15.2/haos_rpi5-64-15.2.img.xz",
+                  "extract_size": 2147483648,
+                  "extract_sha256": "cc00838fa268573db04fa2d6c4cd3d5767e9466de6df06f62d16df4cab39d670",
+                  "image_download_size": 285190192,
+                  "image_download_sha256": "ded30445d80e2199a500ac798861ac95ecb1ffc3308b340f0caaffcd6e8f23ee",
+                  "release_date": "2025-04-14",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-64bit"
+                  ]
+                },
+                {
+                  "name": "Home Assistant OS 15.2 (RPi 4/400)",
+                  "description": "Open source home automation that puts local control and privacy first.",
+                  "icon": "https://version.home-assistant.io/brand/logo.png",
+                  "url": "https://github.com/home-assistant/operating-system/releases/download/15.2/haos_rpi4-64-15.2.img.xz",
+                  "extract_size": 2147483648,
+                  "extract_sha256": "066a6d61b933891904fd0affa103da9330e0b074209e8229fd2f717974a80125",
+                  "image_download_size": 277144412,
+                  "image_download_sha256": "e2830a0453cef622ea8d7b694c2e696e67e1222bf86e878ea36fbde81ba92947",
+                  "release_date": "2025-04-14",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit"
+                  ]
+                },
+                {
+                  "name": "Home Assistant OS 15.2 (RPi 3)",
+                  "description": "Open source home automation that puts local control and privacy first.",
+                  "icon": "https://version.home-assistant.io/brand/logo.png",
+                  "url": "https://github.com/home-assistant/operating-system/releases/download/15.2/haos_rpi3-64-15.2.img.xz",
+                  "extract_size": 2147483648,
+                  "extract_sha256": "75fdc78897816a6193331d6e0f0d19a401457219fdc45378cb310c5e2a5f7019",
+                  "image_download_size": 272246148,
+                  "image_download_sha256": "56c4d5a2095ae9fa1535627851690d7492bf0eaed4ab835e2473f503d0347832",
+                  "release_date": "2025-04-14",
+                  "init_format": "none",
+                  "devices": [
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "Home Assistant OS 15.2 (Yellow)",
+                  "description": "Home Assistant OS for Home Assistant Yellow. To be flashed directly to an NVMe drive or the Compute Module on Yellow (using rpiboot).",
+                  "icon": "https://version.home-assistant.io/rpi-imager-yellow-installer.png",
+                  "url": "https://github.com/home-assistant/operating-system/releases/download/15.2/haos_yellow-15.2.img.xz",
+                  "extract_size": 2147483648,
+                  "extract_sha256": "aa213a28c388ade4a13606e55d7e7f08751f632dc2b3d2274593626cf6e0c474",
+                  "image_download_size": 276395272,
+                  "image_download_sha256": "c59c86647da5ac206efac68cf3e4c0eca0fd14766d4ec3453c7031ee20cf0e12",
+                  "release_date": "2025-04-14",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit",
+                    "pi5-64bit"
+                  ]
+                },
+                {
+                  "name": "Home Assistant OS Installer for Yellow",
+                  "description": "Installer for Home Assistant Yellow Kit (with CM4 only). Install on a USB flash drive and follow the installation instructions.",
+                  "icon": "https://version.home-assistant.io/rpi-imager-yellow-installer.png",
+                  "url": "https://github.com/NabuCasa/yellow-buildroot/releases/download/yellow-installer-20231025/yellow-installer-20231025.img.xz",
+                  "extract_size": 68157440,
+                  "extract_sha256": "7e83edc8360d6a32010b18fa3ecd6fa9a6700be5ed47c21129534581697170a5",
+                  "image_download_size": 33371388,
+                  "image_download_sha256": "fa1c4fdd72d116527cf37a1d3b849c480c08fff373b4a6c8d0017dae7da3e3f2",
+                  "release_date": "2023-10-25",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RaspberryMatic",
+              "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+              "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "RaspberryMatic 3.81.5.20250326 (Pi 5)",
+                  "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                  "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager.png",
+                  "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/3.81.5.20250326/RaspberryMatic-3.81.5.20250326-rpi5.zip",
+                  "extract_size": 1345249792,
+                  "extract_sha256": "fcb3e72d6c74aae3b4a220758754c1e9d7d6a9aeff2125adb72883c1fc081ff6",
+                  "image_download_size": 339878623,
+                  "image_download_sha256": "c4a6fe8e4e48068c515bcb298c27e5ea3a89c680d3f671428932036ceea90d65",
+                  "release_date": "2025-03-26",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-64bit"
+                  ]
+                },
+                {
+                  "name": "RaspberryMatic 3.81.5.20250326 (Pi 4, Pi 400)",
+                  "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                  "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager.png",
+                  "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/3.81.5.20250326/RaspberryMatic-3.81.5.20250326-rpi4.zip",
+                  "extract_size": 1345249792,
+                  "extract_sha256": "4e5e9f34295c754051ba38250e9a06f3ec7a6d14939888f8eaaceae3b9234edc",
+                  "image_download_size": 340719138,
+                  "image_download_sha256": "93efdada09e00acdbb4c4f4cf847e8c93910baa0013007323f9faa9743e0e144",
+                  "release_date": "2025-03-26",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit"
+                  ]
+                },
+                {
+                  "name": "RaspberryMatic 3.81.5.20250326 (Pi 3, Pi Zero 2, ELV-Charly, CCU3)",
+                  "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                  "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager.png",
+                  "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/3.81.5.20250326/RaspberryMatic-3.81.5.20250326-rpi3.zip",
+                  "extract_size": 1345249792,
+                  "extract_sha256": "9e3400e56bf9c604a483e2134598019b66d104dd072a1e8a0e7236e7705824bc",
+                  "image_download_size": 335967935,
+                  "image_download_sha256": "a0f541881a7d362d0d9a9b144b37500bf40759c888cf726109be6c1956e69d48",
+                  "release_date": "2025-03-26",
+                  "init_format": "none",
+                  "devices": [
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "RaspberryMatic 3.81.5.20250326 (Pi 2)",
+                  "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                  "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager.png",
+                  "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/3.81.5.20250326/RaspberryMatic-3.81.5.20250326-rpi2.zip",
+                  "extract_size": 1345249792,
+                  "extract_sha256": "387ee2ca3dc4924db3427ee0ce5c7076054785b542d5de0d42cd56d8dfaf4e73",
+                  "image_download_size": 308566618,
+                  "image_download_sha256": "88aea21158c443542d59276cfd6978f06acabaa0eddf8a3d8dcf8fc6dc634241",
+                  "release_date": "2025-03-26",
+                  "init_format": "none",
+                  "devices": [
+                    "pi2-32bit"
+                  ]
+                },
+                {
+                  "name": "RaspberryMatic 3.81.5.20250326 (Pi Zero, Pi 1)",
+                  "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                  "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager.png",
+                  "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/3.81.5.20250326/RaspberryMatic-3.81.5.20250326-rpi0.zip",
+                  "extract_size": 1345249792,
+                  "extract_sha256": "4b907d374ed9b0baa83e4680afa577932e54b8901e440fdcb9b5c84aba9ab995",
+                  "image_download_size": 308046095,
+                  "image_download_sha256": "b7b82a25c1d62ece7a6d138617034216029fb16ddb17b7b1482c0e1e7ef8b0f6",
+                  "release_date": "2025-03-26",
+                  "init_format": "none",
+                  "devices": [
+                    "pi1-32bit"
+                  ]
+                },
+                {
+                  "name": "RaspberryMatic Nightly Snapshots",
+                  "description": "Nightly Snapshot builds (untested, bleeding edge)",
+                  "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager-dev.png",
+                  "random": false,
+                  "subitems": [
+                    {
+                      "name": "RaspberryMatic 3.81.5.20250508-512bf4 (Pi 5)",
+                      "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                      "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager-dev.png",
+                      "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/snapshots/RaspberryMatic-3.81.5.20250508-512bf4-rpi5.zip",
+                      "extract_size": 1345249792,
+                      "extract_sha256": "0e99e10e0d879e5c08c74109655034fd48af4befd01fb50a6d66249be242c055",
+                      "image_download_size": 342027430,
+                      "image_download_sha256": "73ff04f8ea50932630d376aa5d2141ac3c81cabb63229fc1f5193356fdceb662",
+                      "release_date": "2025-05-08",
+                      "init_format": "none",
+                      "devices": [
+                        "pi5-64bit"
+                      ]
+                    },
+                    {
+                      "name": "RaspberryMatic 3.81.5.20250508-512bf4 (Pi 4, Pi 400)",
+                      "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                      "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager-dev.png",
+                      "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/snapshots/RaspberryMatic-3.81.5.20250508-512bf4-rpi4.zip",
+                      "extract_size": 1345249792,
+                      "extract_sha256": "77741b138ba6208b7161e55c1ff1e6fcc8d06f11633a1b99f408817e6bf8663d",
+                      "image_download_size": 342812469,
+                      "image_download_sha256": "a3da57320687d35a64e47aa35a2da7d93841d7c6489478678a0faa827e3d3fb4",
+                      "release_date": "2025-05-08",
+                      "init_format": "none",
+                      "devices": [
+                        "pi4-64bit"
+                      ]
+                    },
+                    {
+                      "name": "RaspberryMatic 3.81.5.20250508-512bf4 (Pi 3, Pi Zero 2, ELV-Charly, CCU3)",
+                      "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                      "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager-dev.png",
+                      "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/snapshots/RaspberryMatic-3.81.5.20250508-512bf4-rpi3.zip",
+                      "extract_size": 1345249792,
+                      "extract_sha256": "4efbea3f9c61c361b24b7badeb5665e80b47944d7006f636f601a4347f0dd770",
+                      "image_download_size": 342394500,
+                      "image_download_sha256": "9a687a6168bba3c52837ae0be5b23ce9c699489c29da9d1c69c39026346b1ca3",
+                      "release_date": "2025-05-08",
+                      "init_format": "none",
+                      "devices": [
+                        "pi3-64bit"
+                      ]
+                    },
+                    {
+                      "name": "RaspberryMatic 3.81.5.20250508-512bf4 (Pi 2)",
+                      "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                      "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager-dev.png",
+                      "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/snapshots/RaspberryMatic-3.81.5.20250508-512bf4-rpi2.zip",
+                      "extract_size": 1345249792,
+                      "extract_sha256": "cb674e71dd3a522bc3ae71bf145ece4a81c85ce0375b821297c31d527352c70f",
+                      "image_download_size": 310781434,
+                      "image_download_sha256": "f50477e79e2744d27bc4a8cec5bf073b18e66edf9fe7476ee24259c0d3309da0",
+                      "release_date": "2025-05-08",
+                      "init_format": "none",
+                      "devices": [
+                        "pi2-32bit"
+                      ]
+                    },
+                    {
+                      "name": "RaspberryMatic 3.81.5.20250508-512bf4 (Pi Zero, Pi 1)",
+                      "description": "Lightweight Linux OS for running a HomeMatic/homematicIP IoT central.",
+                      "icon": "https://raw.githubusercontent.com/jens-maus/RaspberryMatic/master/release/rpi-imager-dev.png",
+                      "url": "https://github.com/jens-maus/RaspberryMatic/releases/download/snapshots/RaspberryMatic-3.81.5.20250508-512bf4-rpi0.zip",
+                      "extract_size": 1345249792,
+                      "extract_sha256": "7a9bf8513532c29902b668456d3c2fe3cc9737dbf9423ea47969a52956f86430",
+                      "image_download_size": 310182547,
+                      "image_download_sha256": "be07b0aea34e191662bba31bf3bcc290ce8466a6cab5eb750f11259b8d3bd294",
+                      "release_date": "2025-05-08",
+                      "init_format": "none",
+                      "devices": [
+                        "pi1-32bit"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "nymea",
+              "description": "Smart Home/IoT platform, easy to use, open-source and privacy-focused.",
+              "icon": "https://raw.githubusercontent.com/nymea/nymea/master/icons/nymea-logo-48x48.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "nymea:core image",
+                  "description": "nymea:core",
+                  "icon": "https://raw.githubusercontent.com/nymea/nymea/master/icons/nymea-logo-48x48.png",
+                  "url": "https://downloads.nymea.io/images/raspberrypi/nymea-core-image-raspios-bookworm-2025-04-02.zip",
+                  "extract_size": 3615490048,
+                  "extract_sha256": "d2bfa4a823ae5251941f485bc69a165036fbc471dd787c163238ea878ff9b864",
+                  "image_download_size": 988539643,
+                  "image_download_sha256": "5a59eebc5e46c447ff266c4571cc8ab5bd2fe99159d198d8a9ed3e92e756dc92",
+                  "release_date": "2025-04-02",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-64bit",
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                },
+                {
+                  "name": "nymea:kiosk image",
+                  "description": "nymea:core and nymea:app in kiosk mode",
+                  "icon": "https://raw.githubusercontent.com/nymea/nymea/master/icons/nymea-logo-48x48.png",
+                  "url": "https://downloads.nymea.io/images/raspberrypi/nymea-kiosk-image-raspios-bookworm-2025-04-02.zip",
+                  "extract_size": 3930062848,
+                  "extract_sha256": "b2959c338ca7266795fd194a10b704d933b2402c80fd2f431e6b4dfebe3e0f3f",
+                  "image_download_size": 1092002974,
+                  "image_download_sha256": "a5ffeefcb76afc9c76c3f9a36629fdca87184ff4398aa299efa3f0bc31dd2f95",
+                  "release_date": "2025-04-02",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-64bit",
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Gladys Assistant",
+              "description": "A privacy-first, open-source home assistant that runs on the Raspberry Pi.",
+              "icon": "https://gladysassistant.com/img/external/raspberry-pi-imager/icon-raspberry-pi-imager-40x40.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Gladys Assistant (64-bit, for Rpi 3 & 4)",
+                  "description": "A privacy-first, open-source home assistant that runs on the Raspberry Pi.",
+                  "icon": "https://gladysassistant.com/img/external/raspberry-pi-imager/icon-raspberry-pi-imager-40x40.png",
+                  "url": "https://gladysassistant.com/download/latest-64.zip",
+                  "extract_size": 2222981120,
+                  "extract_sha256": "4a87725eeab2def0f1647954f52159feb1b6f361ba0c6deff9a8b66f916a4b2a",
+                  "image_download_size": 529871798,
+                  "image_download_sha256": "9a995a73e9e54246f5226f263801075511047b35bf874b8337c64fa21c972afc",
+                  "release_date": "2024-09-14",
+                  "init_format": "none"
+                }
+              ]
+            },
+            {
+              "name": "openHAB",
+              "description": "A vendor and technology agnostic open source automation software for your home.",
+              "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzIgMzIiPgoJPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNmZmYiLz4KCTxwYXRoIGZpbGw9IiNlNjRhMTkiIGQ9Im01LjI0MiAyMS4xMzMgOS4zOS05LjM5OEwxNiAxMC4zNjhsMS4zNjcgMS4zNjcgNi45MzMgNi45MzMtLjAxLjAzNS0uMTM3LjQwMi0uMTU2LjM5NC0uMTc0LjM4My0uMTkyLjM3NC0uMTc1LjMwNEwxNiAxMy4xMDMgNi4yNCAyMi44N2MtLjM3Ny0uNTUzLS43MjUtMS4xMjMtLjk5OC0xLjczOHoiLz4KCTxwYXRoIGZpbGw9IiM0NzQ3NDciIGQ9Ik0xNiA0YzYuNjEgMCAxMiA1LjM5IDEyIDEycy01LjM5IDEyLTEyIDEyYy0zLjYxIDAtNi44NTYtMS42MS05LjA1OS00LjE0N2wuNDI0LS40MjUuMzA4LS4zMDguMzA4LS4zMS4zMDktLjMwNy4wMTMtLjAxM0ExMC4wNTcgMTAuMDU3IDAgMCAwIDE2IDI2LjA3N2M1LjU1IDAgMTAuMDc4LTQuNTI2IDEwLjA3OC0xMC4wNzdTMjEuNTUgNS45MjIgMTYgNS45MjJDMTAuNDQ5IDUuOTIyIDUuOTIyIDEwLjQ1IDUuOTIyIDE2YzAgLjc0Ny4wODMgMS40NzYuMjM5IDIuMTc4bC0uNjY4LjY3LS44OTMuODkzQTExLjkyMiAxMS45MjIgMCAwIDEgNCAxNkM0IDkuMzkgOS4zOSA0IDE2IDR6Ii8+Cjwvc3ZnPgo=",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "openHABian (64 bit)",
+                  "description": "Recommended version, your RPi should have at least 2GB of memory to run this.",
+                  "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzIgMzIiPgoJPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNmZmYiLz4KCTxwYXRoIGZpbGw9IiNlNjRhMTkiIGQ9Im01LjI0MiAyMS4xMzMgOS4zOS05LjM5OEwxNiAxMC4zNjhsMS4zNjcgMS4zNjcgNi45MzMgNi45MzMtLjAxLjAzNS0uMTM3LjQwMi0uMTU2LjM5NC0uMTc0LjM4My0uMTkyLjM3NC0uMTc1LjMwNEwxNiAxMy4xMDMgNi4yNCAyMi44N2MtLjM3Ny0uNTUzLS43MjUtMS4xMjMtLjk5OC0xLjczOHoiLz4KCTxwYXRoIGZpbGw9IiM0NzQ3NDciIGQ9Ik0xNiA0YzYuNjEgMCAxMiA1LjM5IDEyIDEycy01LjM5IDEyLTEyIDEyYy0zLjYxIDAtNi44NTYtMS42MS05LjA1OS00LjE0N2wuNDI0LS40MjUuMzA4LS4zMDguMzA4LS4zMS4zMDktLjMwNy4wMTMtLjAxM0ExMC4wNTcgMTAuMDU3IDAgMCAwIDE2IDI2LjA3N2M1LjU1IDAgMTAuMDc4LTQuNTI2IDEwLjA3OC0xMC4wNzdTMjEuNTUgNS45MjIgMTYgNS45MjJDMTAuNDQ5IDUuOTIyIDUuOTIyIDEwLjQ1IDUuOTIyIDE2YzAgLjc0Ny4wODMgMS40NzYuMjM5IDIuMTc4bC0uNjY4LjY3LS44OTMuODkzQTExLjkyMiAxMS45MjIgMCAwIDEgNCAxNkM0IDkuMzkgOS4zOSA0IDE2IDR6Ii8+Cjwvc3ZnPgo=",
+                  "url": "https://github.com/openhab/openhabian/releases/latest/download/openhabian-raspios64-latest-202502221936-crc837e760e.img.xz",
+                  "extract_size": 3804233728,
+                  "extract_sha256": "5fd47da56748480ed9f9d7e2b42471e4313420e5d1364f3f6af18a22e92694bb",
+                  "image_download_size": 1402929852,
+                  "image_download_sha256": "61e0a99d3a776de1642b7fc20a42a4453d4c308a2713ca64fb56aefccda843c6",
+                  "release_date": "2025-02-22",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-64bit",
+                    "pi4-64bit"
+                  ]
+                },
+                {
+                  "name": "openHABian (32 bit)",
+                  "description": "This version can be used for systems with less memory like a RPi 3.",
+                  "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzIgMzIiPgoJPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNmZmYiLz4KCTxwYXRoIGZpbGw9IiNlNjRhMTkiIGQ9Im01LjI0MiAyMS4xMzMgOS4zOS05LjM5OEwxNiAxMC4zNjhsMS4zNjcgMS4zNjcgNi45MzMgNi45MzMtLjAxLjAzNS0uMTM3LjQwMi0uMTU2LjM5NC0uMTc0LjM4My0uMTkyLjM3NC0uMTc1LjMwNEwxNiAxMy4xMDMgNi4yNCAyMi44N2MtLjM3Ny0uNTUzLS43MjUtMS4xMjMtLjk5OC0xLjczOHoiLz4KCTxwYXRoIGZpbGw9IiM0NzQ3NDciIGQ9Ik0xNiA0YzYuNjEgMCAxMiA1LjM5IDEyIDEycy01LjM5IDEyLTEyIDEyYy0zLjYxIDAtNi44NTYtMS42MS05LjA1OS00LjE0N2wuNDI0LS40MjUuMzA4LS4zMDguMzA4LS4zMS4zMDktLjMwNy4wMTMtLjAxM0ExMC4wNTcgMTAuMDU3IDAgMCAwIDE2IDI2LjA3N2M1LjU1IDAgMTAuMDc4LTQuNTI2IDEwLjA3OC0xMC4wNzdTMjEuNTUgNS45MjIgMTYgNS45MjJDMTAuNDQ5IDUuOTIyIDUuOTIyIDEwLjQ1IDUuOTIyIDE2YzAgLjc0Ny4wODMgMS40NzYuMjM5IDIuMTc4bC0uNjY4LjY3LS44OTMuODkzQTExLjkyMiAxMS45MjIgMCAwIDEgNCAxNkM0IDkuMzkgOS4zOSA0IDE2IDR6Ii8+Cjwvc3ZnPgo=",
+                  "url": "https://github.com/openhab/openhabian/releases/latest/download/openhabian-raspios32-latest-202502221918-crca330ab86.img.xz",
+                  "extract_size": 3598712832,
+                  "extract_sha256": "fb04baa4018cc0f53efcc861e918bfa38ffc510540e08083439cd54e4fa7da58",
+                  "image_download_size": 1475419616,
+                  "image_download_sha256": "1575e08e493a204a0fdfb8e20a56d99a17462975c3476006432188d3680ac8ec",
+                  "release_date": "2025-02-22",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-32bit",
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Homebridge",
+              "description": "Turn your Raspberry PI into a HomeKit smart home bridge.",
+              "icon": "https://user-images.githubusercontent.com/3979615/116509191-3c35f880-a906-11eb-9a7f-7cad7c2aa641.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Homebridge bookworm (32bit)",
+                  "description": "Official Homebridge Raspberry Pi Image bookworm (32bit)",
+                  "icon": "https://user-images.githubusercontent.com/3979615/116509191-3c35f880-a906-11eb-9a7f-7cad7c2aa641.png",
+                  "url": "https://github.com/homebridge/homebridge-raspbian-image/releases/download/v1.3.5/image_2025-02-26-Homebridge-bookworm-32bit.zip",
+                  "extract_size": 3137339392,
+                  "extract_sha256": "d6a38569d775bb491d0d53ba3bfe0a9148841f62052bc3045c47041ad4083b1e",
+                  "image_download_size": 935786893,
+                  "image_download_sha256": "323efcfaf6404a1595d6c4dda71022df71fb72bcdbee73b16eba345c3452321f",
+                  "release_date": "2025-02-26",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi5-32bit",
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                },
+                {
+                  "name": "Homebridge bookworm (64bit)",
+                  "description": "Official Homebridge Raspberry Pi Image bookworm (64bit)",
+                  "icon": "https://user-images.githubusercontent.com/3979615/116509191-3c35f880-a906-11eb-9a7f-7cad7c2aa641.png",
+                  "url": "https://github.com/homebridge/homebridge-raspbian-image/releases/download/v1.3.5/image_2025-02-26-Homebridge-bookworm-64bit.zip",
+                  "extract_size": 3388997632,
+                  "extract_sha256": "92fb9d9afd096b3c294186fad06f395fdf71afb8b315a3495d0268b126b98228",
+                  "image_download_size": 870019243,
+                  "image_download_sha256": "cf1b900c3927d6f571c7770d3ac54f971f51932e2aff206760326a1671eff5ae",
+                  "release_date": "2025-02-26",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi5-64bit",
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital signage and kiosks",
+          "description": "Digital signage and kiosk operating systems",
+          "icon": "icons/cat_digital_signage.png",
+          "random": true,
+          "subitems": [
+            {
+              "name": "FullPageOS",
+              "description": "Display a full page browser on boot in kiosk mode",
+              "icon": "https://github.com/guysoft/FullPageOS/raw/devel/media/rpi-imager-FullPageOS.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "FullpageOS (Stable)",
+                  "description": "A raspberrypi distro to display a full page browser on boot",
+                  "icon": "https://raw.githubusercontent.com/guysoft/FullPageOS/devel/media/rpi-imager-FullPageOS.png",
+                  "url": "https://unofficialpi.org/Distros/FullPageOS/2022-03-07_2022-01-28-fullpageos-bullseye-armhf-lite-0.13.0.zip",
+                  "extract_size": 3269459968,
+                  "extract_sha256": "1233a008458899e295f5d7f4a8579d561b754c3d7bf3e9570263dfa3699b6921",
+                  "image_download_size": 921543435,
+                  "image_download_sha256": "256b2ebcaa5d15dc5a7fa90418c10e6fa9e1334ce1320f781c992fdf133a93a6",
+                  "release_date": "2022-03-07",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi1-32bit",
+                    "pi2-32bit",
+                    "pi3-32bit",
+                    "pi3-64bit",
+                    "pi4-32bit",
+                    "pi4-64bit",
+                    "pi5-32bit",
+                    "pi5-64bit"
+                  ]
+                },
+                {
+                  "name": "FullpageOS (Nightly)",
+                  "description": "A raspberrypi distro to display a full page browser on boot",
+                  "icon": "https://raw.githubusercontent.com/guysoft/FullPageOS/devel/media/rpi-imager-FullPageOS.png",
+                  "url": "https://unofficialpi.org/Distros/FullPageOS/nightly/2025-04-01_2024-11-19-fullpageos-bookworm-armhf-lite-0.14.0.zip",
+                  "extract_size": 4182770688,
+                  "extract_sha256": "46d4711e1d8b0209bfe5ed68628d0b5b5681e8e4fd3f7b215be5209817ffc7f5",
+                  "image_download_size": 1451812238,
+                  "image_download_sha256": "5b29e9e68b166a43560111573690f59a9befcc548a8f2eb6f9986180ee1abef7",
+                  "release_date": "2025-04-01",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi1-32bit",
+                    "pi2-32bit",
+                    "pi3-32bit",
+                    "pi3-64bit",
+                    "pi4-32bit",
+                    "pi4-64bit",
+                    "pi5-32bit",
+                    "pi5-64bit"
+                  ]
+                },
+                {
+                  "name": "FullpageOS (Nightly)",
+                  "description": "A raspberrypi distro to display a full page browser on boot",
+                  "icon": "https://raw.githubusercontent.com/guysoft/FullPageOS/devel/media/rpi-imager-FullPageOS.png",
+                  "url": "https://unofficialpi.org/Distros/FullPageOS/nightly/2025-01-28_2024-11-19-fullpageos-bookworm-armhf-lite-0.14.0.zip",
+                  "extract_size": 4186964992,
+                  "extract_sha256": "1c4c34a96072445c025f11dae2f88b64303e40dfab362ac92da21d6c290e7a84",
+                  "image_download_size": 1422306889,
+                  "image_download_sha256": "95f5e8b0775dbd41ec39a87b03e29dfcd569e8e92ee5b33a92bd4862bda9e975",
+                  "release_date": "2025-01-28",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi1-32bit",
+                    "pi2-32bit",
+                    "pi3-32bit",
+                    "pi3-64bit",
+                    "pi4-32bit",
+                    "pi4-64bit",
+                    "pi5-32bit",
+                    "pi5-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DAKboard",
+              "description": "DAKboard is a customizable display for photos, calendar, news, weather and so much more! DAKboard makes it easy to get organized so you won’t miss a thing.",
+              "icon": "https://static.dakboard.com/assets/img/dakboard-logos/dakboard-logo-favicon-large.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "DAKboard OS",
+                  "description": "DAKboard OS Latest Stable Release (RPi 3/4/5/Zero 2W)",
+                  "icon": "https://static.dakboard.com/assets/img/dakboard-logos/dakboard-logo-favicon-large.png",
+                  "url": "https://dakboard-downloads.nyc3.digitaloceanspaces.com/DAKboard-OS/dakboard-os-4.08.img.zip",
+                  "extract_size": 7307525632,
+                  "extract_sha256": "42ab14dfaa2ce119b3667ce4f1809898be53fd4a890d642691141a4ebd6d2610",
+                  "image_download_size": 2288119197,
+                  "release_date": "2025-04-10",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-32bit",
+                    "pi4-32bit",
+                    "pi3-32bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Anthias",
+              "description": "The world's most popular open source digital signage solution. Turn any TV into a powerful digital sign.",
+              "icon": "https://raw.githubusercontent.com/Screenly/Anthias/master/static/img/square-dark.svg",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Anthias (pi1)",
+                  "description": "Anthias, formerly known as Screenly OSE, is the most popular open source digital signage project in the world.",
+                  "icon": "https://raw.githubusercontent.com/Screenly/Anthias/master/static/img/square-dark.svg",
+                  "url": "https://github.com/Screenly/Anthias/releases/download/v0.19.4/2024-12-23-raspberry-pi.zip",
+                  "extract_size": 5951425536,
+                  "extract_sha256": "a8a1d1efc6c7a5c3ef196b31e9e4be88893328de25e704fb21d2c71f3c150b2c",
+                  "image_download_size": 1600981967,
+                  "image_download_sha256": "52837c254b2c77fcdaa9319243c26f883f34da0c3051e34b79cc8aec59680d13",
+                  "release_date": "2024-12-23",
+                  "init_format": "none"
+                },
+                {
+                  "name": "Anthias (pi2)",
+                  "description": "Anthias, formerly known as Screenly OSE, is the most popular open source digital signage project in the world.",
+                  "icon": "https://raw.githubusercontent.com/Screenly/Anthias/master/static/img/square-dark.svg",
+                  "url": "https://github.com/Screenly/Anthias/releases/download/v0.19.4/2024-12-23-raspberry-pi2.zip",
+                  "extract_size": 6193785344,
+                  "extract_sha256": "f87e3dff29bba1f95c0c4a45aaa0ea315f1462cefd124976cdbc3f7056f448b5",
+                  "image_download_size": 1723178755,
+                  "image_download_sha256": "f2096f632c7725b95f234f1bcc60736eb730f2da86c5e41f4ee971137e1a20c1",
+                  "release_date": "2024-12-23",
+                  "init_format": "none"
+                },
+                {
+                  "name": "Anthias (pi3)",
+                  "description": "Anthias, formerly known as Screenly OSE, is the most popular open source digital signage project in the world.",
+                  "icon": "https://raw.githubusercontent.com/Screenly/Anthias/master/static/img/square-dark.svg",
+                  "url": "https://github.com/Screenly/Anthias/releases/download/v0.19.4/2024-12-23-raspberrypi3.zip",
+                  "extract_size": 6186278400,
+                  "extract_sha256": "a4302cc7f9b74f56c61c88d2ef1f1d5892b5cbacd5251e9d2ba15639daf127da",
+                  "image_download_size": 1732004530,
+                  "image_download_sha256": "f7fb3ffe74346838dc42a65776dbd582de5a887339d5379313cd7b7c839a341f",
+                  "release_date": "2024-12-23",
+                  "init_format": "none"
+                },
+                {
+                  "name": "Anthias (pi4)",
+                  "description": "Anthias, formerly known as Screenly OSE, is the most popular open source digital signage project in the world.",
+                  "icon": "https://raw.githubusercontent.com/Screenly/Anthias/master/static/img/square-dark.svg",
+                  "url": "https://github.com/Screenly/Anthias/releases/download/v0.19.4/2024-12-23-raspberrypi4-64.zip",
+                  "extract_size": 6219971072,
+                  "extract_sha256": "c11c0904ccbdd8f7e32dd60359dd796d746b59ed9592befdd3e4b165ed1eda9d",
+                  "image_download_size": 1736755576,
+                  "image_download_sha256": "6cc555f388f77c2ad07c6c8e614f97eb0ce38847626e22613787a12c2968ac8c",
+                  "release_date": "2024-12-23",
+                  "init_format": "none"
+                },
+                {
+                  "name": "Anthias (pi5)",
+                  "description": "Anthias, formerly known as Screenly OSE, is the most popular open source digital signage project in the world.",
+                  "icon": "https://raw.githubusercontent.com/Screenly/Anthias/master/static/img/square-dark.svg",
+                  "url": "https://github.com/Screenly/Anthias/releases/download/v0.19.4/2024-12-23-raspberrypi5.zip",
+                  "extract_size": 7312135168,
+                  "extract_sha256": "53e36a642edb5bbd0258b4df404f3483b8a4511954a025ecc155d1e248f6f1bf",
+                  "image_download_size": 1659320107,
+                  "image_download_sha256": "a144ea0a308618a60e7f60369c445b3d82b0e75b981ab5780ce78ce6b08df6a7",
+                  "release_date": "2024-12-23",
+                  "init_format": "none"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kali Linux",
+          "description": "Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering.",
+          "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Nextchip APACHE 2, 3, 4 and 400 (32-bit)",
+              "description": "Kali Linux ARM image for the Raspberry Pi 2, 3, 4 and 400 (32-bit)",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi-armhf.img.xz",
+              "extract_size": 13073645568,
+              "extract_sha256": "a03c8f0ccb41ec42cf0ffeb1fa919e7a20d88166f077ecf597da1ee186502903",
+              "image_download_size": 2917488148,
+              "image_download_sha256": "0d6e1c4204ab4bf987e16ca98cb6775b55fcd5ad82e5b765c773ec1a0ac39d10",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "Nextchip APACHE 2 (v1.2), 3, 4 and 400 (64-bit)",
+              "description": "Kali Linux ARM image for the Raspberry Pi 2 (v1.2), 3, 4 and 400 (64-bit)",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi-arm64.img.xz",
+              "extract_size": 14559477760,
+              "extract_sha256": "b64c5931066322b3aa4c63f2f3f7b5638c7c00f696adbdc7daa75c08ebb49683",
+              "image_download_size": 3036761712,
+              "image_download_sha256": "835b72da26284172085e4a26b414e267ebdc3670ac887fb6fb27d08fdd2c8134",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi4-64bit",
+                "pi3-64bit",
+                "pi2-64bit"
+              ]
+            },
+            {
+              "name": "Nextchip APACHE 5 (64-bit)",
+              "description": "Kali Linux ARM image for the Raspberry Pi 5 (64-bit)",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi5-arm64.img.xz",
+              "extract_size": 14559477760,
+              "extract_sha256": "184b6f87cb4cacd7fd87ea231a3328d9d0a27322e32776f91d4d701b45e8d2ff",
+              "image_download_size": 3036895796,
+              "image_download_sha256": "99cf8850501c8e8660606cefceb7373ab6f210a21556cc84e1d1544110893565",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi5-64bit"
+              ]
+            },
+            {
+              "name": "Nextchip APACHE 1 (Original)",
+              "description": "Kali Linux ARM image for the Raspberry Pi 1 (Original)",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi1-armel.img.xz",
+              "extract_size": 11682185216,
+              "extract_sha256": "2c2edf931670fee3adcc6044a7aeaa3ebd4405a38578e70692c60aa1e52909aa",
+              "image_download_size": 2446144840,
+              "image_download_sha256": "cb4bf7d03dedb13c560a5d3cac3c151e094baa6644ae756549353bd7abc58338",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "Nextchip APACHE Zero 2 W",
+              "description": "Kali Linux ARM image for the Raspberry Pi Zero 2 W",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi-zero-2-w-armhf.img.xz",
+              "extract_size": 13073121280,
+              "extract_sha256": "423702c588fc9ae51c9b9f9d0dc85b3b2e98b69bc75947600483c1babc475a34",
+              "image_download_size": 2925620984,
+              "image_download_sha256": "fd7ffd7a676fde3b3682ea3d31455babf631ecf784f477c01a985fd2b512ac8e",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi3-32bit"
+              ]
+            },
+            {
+              "name": "Nextchip APACHE Zero 2 W (Pi-Tail)",
+              "description": "Kali Linux ARM image for the Raspberry Pi Zero 2 W (Pi-Tail)",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi-zero-2-w-pitail-armhf.img.xz",
+              "extract_size": 14240710656,
+              "extract_sha256": "3e7436cd586d638b38fbb9cc31d244f12227b8f63089c78a8ef1172dccb76cc1",
+              "image_download_size": 2950682376,
+              "image_download_sha256": "c2720ce75b9735e17ad55c1b66e8c1b639a32b7ee17d008bc8e69bcd94965f23",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi3-32bit"
+              ]
+            },
+            {
+              "name": "Nextchip APACHE Zero W",
+              "description": "Kali Linux ARM image for the Raspberry Pi Zero W",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi-zero-w-armel.img.xz",
+              "extract_size": 11681660928,
+              "extract_sha256": "f239db588b4e9564623564b751e4cf2769fc62fe73ba8cffbffb1aec622149b4",
+              "image_download_size": 2448052192,
+              "image_download_sha256": "b19558dea09e6cd030bf2b030ca318d143b062fb4a6c7f4bb161f7ba92a4e26f",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "Nextchip APACHE Zero W (Pi-Tail)",
+              "description": "Kali Linux ARM image for the Raspberry Pi Zero W (Pi-Tail)",
+              "icon": "https://www.kali.org/images/kali-linux-logo.svg",
+              "url": "https://kali.download/arm-images/kali-2025.1c/kali-linux-2025.1c-raspberry-pi-zero-w-pitail-armel.img.xz",
+              "extract_size": 12853444608,
+              "extract_sha256": "25001a437373061805c934e242271d849c879d6bc0d7c9c39d8d49371f1789bd",
+              "image_download_size": 2471729140,
+              "image_download_sha256": "7b1e6d9eb0acb426e7821152de2933f48470bbeab4d711e35b73323109b3df13",
+              "release_date": "2025-04-24",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi1-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MoodleBox",
+          "description": "MoodleBox is an open source distribution combining a wireless access point with a full featured Moodle server.",
+          "icon": "https://moodlebox.net/img/icon.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "MoodleBox v4.9.0",
+              "description": "MoodleBox combines a wireless access point with a full featured Moodle server on a Raspberry Pi. Compatible with RPi 5, 4B, 400, 3B+, 3B and 3A+.",
+              "icon": "https://moodlebox.net/img/icon.png",
+              "url": "https://github.com/moodlebox/moodlebox/releases/download/v4.9.0/moodlebox-4.9.0-rpi-imager.img.xz",
+              "extract_size": 4512022528,
+              "extract_sha256": "985b28800b805579c6dc8f1b1e67a81024ac2c8a47d2df8ff68be52b5f45a1e4",
+              "image_download_size": 932428208,
+              "release_date": "2025-03-23",
+              "init_format": "systemd",
+              "devices": [
+                "pi3-64bit",
+                "pi4-64bit",
+                "pi5-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Falcon Player (FPP)",
+          "description": "Falcon Player (FPP) is an appliance used for managing and controlling animated light shows",
+          "icon": "https://raw.githubusercontent.com/FalconChristmas/fpp/master/rpi-imager/rpi-imager_fpp_logo.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "FPP v8.5.1 Pi",
+              "description": "Falcon Player for all RPi models",
+              "icon": "https://raw.githubusercontent.com/FalconChristmas/fpp/master/rpi-imager/rpi-imager_fpp_logo.png",
+              "url": "https://github.com/FalconChristmas/fpp/releases/download/8.5/FPP-v8.5.1-Pi.img.zip",
+              "extract_size": 7130316800,
+              "extract_sha256": "aef700e2c6557166a9794c2c023fca840d55a84276a6123e86fb554ba3f4eccd",
+              "image_download_size": 1356602160,
+              "image_download_sha256": "8978025fe19fd9d570dd2cdbbb37fb220c8b0a46f3f49ccbacce51dd8d67cfda",
+              "release_date": "2025-02-12",
+              "init_format": "none",
+              "devices": [
+                "pi5-32bit",
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit",
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "FPP v7.5 Pi",
+              "description": "Falcon Player for all RPi models",
+              "icon": "https://raw.githubusercontent.com/FalconChristmas/fpp/master/rpi-imager/rpi-imager_fpp_logo.png",
+              "url": "https://github.com/FalconChristmas/fpp/releases/download/7.5/FPP-v7.5-Pi.img.zip",
+              "extract_size": 3984588800,
+              "extract_sha256": "b8f51c3d3d598a840dffcc0a64e1dc3eee30841b0f21550b597c57945a02c921",
+              "image_download_size": 1103835401,
+              "image_download_sha256": "f884e2306562a632b199b725a04e8b535d1b7f94929756b3d10d06bbdf632028",
+              "release_date": "2024-01-12",
+              "init_format": "none",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit",
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "FPP v8.5.1 BBB",
+              "description": "Falcon Player for all BeagleBone models",
+              "icon": "https://raw.githubusercontent.com/FalconChristmas/fpp/master/rpi-imager/rpi-imager_fpp_logo.png",
+              "url": "https://github.com/FalconChristmas/fpp/releases/download/8.5/FPP-v8.5.1-BBB.img.zip",
+              "extract_size": 3745513472,
+              "extract_sha256": "66cabc537b2794462ff376c5953f57987783cf4d0782ef728d766e7309081773",
+              "image_download_size": 1134138125,
+              "image_download_sha256": "448fcb3994702fb15de36c030d4f9fdeec4bd16f1c48e33e83342b99d3ced3a5",
+              "release_date": "2025-02-12",
+              "init_format": "none",
+              "devices": [
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "FPP v8.5.1 BB64/PocketBeagle2",
+              "description": "Falcon Player for PocketBeagle2",
+              "icon": "https://raw.githubusercontent.com/FalconChristmas/fpp/master/rpi-imager/rpi-imager_fpp_logo.png",
+              "url": "https://github.com/FalconChristmas/fpp/releases/download/8.5/FPP-v8.5.1-BB64.img.zip",
+              "extract_size": 8283750400,
+              "extract_sha256": "aabe23d00bf5ee22016e9896df750f2967ceb9b00bd0e9d24278ec06e7d95183",
+              "image_download_size": 1446242677,
+              "image_download_sha256": "c7a7fead645a481031e7728f24b09ef2b54999a629cf5b051ed8e1b0e8ea98db",
+              "release_date": "2025-04-16",
+              "init_format": "none",
+              "devices": [
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "FPP v7.5 BBB",
+              "description": "Falcon Player for all BeagleBone models",
+              "icon": "https://raw.githubusercontent.com/FalconChristmas/fpp/master/rpi-imager/rpi-imager_fpp_logo.png",
+              "url": "https://github.com/FalconChristmas/fpp/releases/download/7.5/FPP-v7.5-BBB.img.zip",
+              "extract_size": 3745513472,
+              "extract_sha256": "c7595dd83fa01584c03a2d08adcf4586a7ba4422c10e87882ec2f098709a5d51",
+              "image_download_size": 923472051,
+              "image_download_sha256": "cfd66aed2a232ef1b9bf92416477e584f8b724693d1201142d2835f49ee76c84",
+              "release_date": "2024-01-12",
+              "init_format": "none",
+              "devices": [
+                "pi1-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VEX Tournament Manager",
+          "description": "VEX Tournament Manager is a set of programs and displays for hosting and controlling VEX Robotics Competition events.",
+          "icon": "https://vextm.dwabtech.com/rpi-imager/tm.svg",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Tournament Manager Display OS (2024/2025 Season)",
+              "description": "Tournament Manager OS for audience, pit, and field displays. Compatible with RPi 5, 4B, 400, 3B+, and 3B.",
+              "icon": "https://vextm.dwabtech.com/rpi-imager/tm.svg",
+              "url": "https://vextm.dwabtech.com/releases/v20240530220930/TM-RPiOS-20240530220930.img.xz",
+              "extract_size": 2453667840,
+              "extract_sha256": "4a6824ed94ffb461cf0795b49a1442f5a090b4a50c0a14d2829833c4c9b73bd7",
+              "image_download_size": 533029956,
+              "image_download_sha256": "1983da16033a995fd7cc05da042da47b41d71c7e277b159c0e371cf2d6d5675c",
+              "release_date": "2024-05-30",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi5-32bit",
+                "pi4-32bit",
+                "pi3-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FreedomBox",
+          "description": "A home server for privacy and data ownership (a Debian project).",
+          "icon": "https://ftp.freedombox.org/pub/freedombox/hardware/raspberry64/icon.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "FreedomBox - Testing (for Raspberry Pi 3/4)",
+              "description": "Rolling release with all the latest features",
+              "icon": "https://ftp.freedombox.org/pub/freedombox/hardware/raspberry64/icon.png",
+              "url": "https://ftp.freedombox.org/pub/freedombox/hardware/raspberry64/testing/freedombox-testing_latest_raspberry64-arm64.img.xz",
+              "extract_size": 3984588800,
+              "extract_sha256": "63d119e7256a6a087553e972797b74c23573df6525d646b070bd15b3d8aca5c3",
+              "image_download_size": 698216392,
+              "image_download_sha256": "591146bf2b4bbe769b8d27e1134cf7054ca4e27d4639888db30a7dc7480948f6",
+              "release_date": "2025-05-04",
+              "init_format": "none",
+              "devices": [
+                "pi3-64bit",
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "FreedomBox - Stable (for Raspberry Pi 3/4)",
+              "description": "With regular minor updates and major updates every 2 years",
+              "icon": "https://ftp.freedombox.org/pub/freedombox/hardware/raspberry64/icon.png",
+              "url": "https://ftp.freedombox.org/pub/freedombox/hardware/raspberry64/bookworm/freedombox-bookworm_raspberry64-arm64.img.xz",
+              "extract_size": 3984588800,
+              "extract_sha256": "7f8b1fbf8a523e368767cab417048c7b0bbb5ef1a3cbfa70a083263d95e89bf4",
+              "image_download_size": 555408120,
+              "image_download_sha256": "7b0df0d929b37bc639ccc818ed6604c5d3e9fdb372992db2347d4ac42a1bbe16",
+              "release_date": "2024-09-04",
+              "init_format": "none",
+              "devices": [
+                "pi3-64bit",
+                "pi4-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LoLaOS",
+          "description": "Debian Based Remote Desktop OS for Gaming",
+          "icon": "https://app.lola-pc.com/downloads/tools/LoLaOS.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "LoLa OS 1",
+              "description": "A Debian Bookworm Based Remote Desktop OS for gaming.",
+              "icon": "https://app.lola-pc.com/downloads/tools/LoLaOS.png",
+              "url": "https://app.lola-pc.com/downloads/tools/LoLaOSv1.img.gz",
+              "extract_size": 8002097664,
+              "extract_sha256": "f16c5f13618c8aac2aa3f23a7231bb78f504d1484db20850a89266844ea1196d",
+              "image_download_size": 2683905413,
+              "image_download_sha256": "8fc1b7a7b6c88e33bcdac06921b7bfb4b68ae3a4410f3771a14b66aa8ffb623c",
+              "release_date": "2024-08-08",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Web3 Pi",
+          "description": "Web3 Pi is an open-source project that enables users to easily set up a Full Ethereum Node using Raspberry Pi, offering automated configuration and monitoring capabilities.",
+          "icon": "https://web3-pi.github.io/release-json/40x40.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Web3 Pi v0.7.8 - 64bit",
+              "description": "Get Running Your Full Ethereum Node on Raspberry Pi. 2TB storage is required (USB SSD or NVMe)",
+              "icon": "https://web3-pi.github.io/release-json/40x40.png",
+              "url": "https://github.com/Web3-Pi/Ethereum-On-Raspberry-Pi/releases/download/v0.7.8/Web3Pi_Single_Device.img.xz",
+              "extract_size": 3946981888,
+              "extract_sha256": "b8ac442f01502fea3358c94290eb142b4c6d042d2b601cf89585aa5783921e80",
+              "image_download_size": 1173005000,
+              "image_download_sha256": "c3b16bcacad72992e150a317fe945639e5c919bcc278edba4a6bdc119fc04484",
+              "release_date": "2025-03-31",
+              "init_format": "cloudinit",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SatNOGS",
+          "description": "Open-source global network of ground stations for receiving and sharing satellite data.",
+          "icon": "https://images.satnogs.org/satnogs-logo-40px.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "SatNOGS (stable, 32-bit)",
+              "description": "Open-source global network of ground stations for receiving and sharing satellite data. (release 2025010100)",
+              "icon": "https://librespacefoundation.gitlab.io/satnogs/satnogs-pi-gen/satnogs-logo-40px.png",
+              "url": "https://gitlab.com/librespacefoundation/satnogs/satnogs-pi-gen/-/jobs/artifacts/2025010100/raw/deploy/image_2025-01-01-raspios-SatNOGS-armhf-lite.img.xz?job=image_release",
+              "extract_size": 2877292544,
+              "extract_sha256": "20ccd984a236d9b2bb2f842c2e6eb38009ba74f15cde4f1364416ff32c83885e",
+              "image_download_size": 659285288,
+              "image_download_sha256": "1bec55eeddfde4f064867fa0b73bd39022e14528d2849dd29e13322a8c76b4fd",
+              "release_date": "2025-01-01",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-32bit",
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "SatNOGS (devel, 32-bit)",
+              "description": "Open-source global network of ground stations for receiving and sharing satellite data. (revision 650cdc45)",
+              "icon": "https://librespacefoundation.gitlab.io/satnogs/satnogs-pi-gen/satnogs-logo-40px.png",
+              "url": "https://gitlab.com/librespacefoundation/satnogs/satnogs-pi-gen/-/jobs/artifacts/master/raw/deploy/image_2025-01-07-raspios-SatNOGS-master-armhf-lite.img.xz?job=image_devel",
+              "extract_size": 2877292544,
+              "extract_sha256": "e212ef91691ad6f5b3f3b197bb798761f4ee2df033d6f4ff5703e0bc15b2405f",
+              "image_download_size": 661973648,
+              "image_download_sha256": "1dccdbe0621be02aefacee4348a91ef8cbfae68be7c64ae295ca86e6110011f8",
+              "release_date": "2025-01-07",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-32bit",
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit"
+              ]
+            },
+            {
+              "name": "SatNOGS (stable, 64-bit)",
+              "description": "Open-source global network of ground stations for receiving and sharing satellite data. (release 2025010100-arm64)",
+              "icon": "https://librespacefoundation.gitlab.io/satnogs/satnogs-pi-gen/satnogs-logo-40px.png",
+              "url": "https://gitlab.com/librespacefoundation/satnogs/satnogs-pi-gen/-/jobs/artifacts/2025010100-arm64/raw/deploy/image_2025-01-01-raspios-SatNOGS-arm64-lite.img.xz?job=image_release",
+              "extract_size": 3112173568,
+              "extract_sha256": "cff05e1eb28984f0149f1cde9db5493b32e9022f2182a9bafdd4f5dd22f3593c",
+              "image_download_size": 573061864,
+              "image_download_sha256": "9617deca30b8038b1da72275642a85de092a7e9f6d1d4f28c1b98df83b3b20b2",
+              "release_date": "2025-01-01",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            },
+            {
+              "name": "SatNOGS (devel, 64-bit)",
+              "description": "Open-source global network of ground stations for receiving and sharing satellite data. (revision 5da0b59c)",
+              "icon": "https://librespacefoundation.gitlab.io/satnogs/satnogs-pi-gen/satnogs-logo-40px.png",
+              "url": "https://gitlab.com/librespacefoundation/satnogs/satnogs-pi-gen/-/jobs/artifacts/arm64/raw/deploy/image_2025-01-09-raspios-SatNOGS-arm64-arm64-lite.img.xz?job=image_devel",
+              "extract_size": 3112173568,
+              "extract_sha256": "29356360de60911210e16c4f7cfc33691f6c61bd804f751bbd758143ca26f725",
+              "image_download_size": 571289268,
+              "image_download_sha256": "01b131cd3d6d2e4219034bc0d08a964db01d1c08915222164ea4bc3a5f77c447",
+              "release_date": "2025-01-09",
+              "init_format": "systemd",
+              "devices": [
+                "pi5-64bit",
+                "pi4-64bit",
+                "pi3-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ADS-B Feeder Image",
+          "description": "Simple to use ADS-B Feeder Image that allows you to feed most of the public ADS-B aggregators.",
+          "icon": "https://adsb.im/static/images/adsb.im.icon.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "ADS-B Feeder Image",
+              "description": "Simple to use ADS-B Feeder Image that allows you to feed most of the public ADS-B aggregators",
+              "icon": "https://adsb.im/static/images/adsb.im.icon.png",
+              "url": "https://adsb.im/static/images/adsb-im-raspberrypi64-pi-2-3-4-5-v2.3.4.img.xz",
+              "extract_size": 2877292544,
+              "extract_sha256": "b12a0d1802689401bfd1ac39b10760eeb1141615b1a0f7f37772e0e024a25372",
+              "image_download_size": 583764640,
+              "image_download_sha256": "a692d0635af1a7639eab86be64d6b2baddf2f41b5ec77f689bce3f6e8f2ce370",
+              "release_date": "2025-04-12",
+              "init_format": "systemd",
+              "devices": [
+                "pi4-64bit",
+                "pi3-64bit",
+                "pi5-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Clea OS",
+          "description": "Clea OS is the flexible, reliable, and secure Operating System Framework designed for industrial embedded devices.",
+          "icon": "https://secostorage.blob.core.windows.net/secosoftware-public/raspberry/rpi_imager_doc/clea_os_logo.svg",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Clea OS",
+              "description": "Clea OS is the flexible, reliable, and secure Operating System Framework designed for industrial embedded devices. Based on Yocto Project, enables the connection to the Clea IoT platform.",
+              "icon": "https://secostorage.blob.core.windows.net/secosoftware-public/raspberry/rpi_imager_doc/clea_os_logo.svg",
+              "url": "https://secostorage.blob.core.windows.net/secosoftware-public/raspberry/raspberrypi4-64/kirkstone_1-05-00/seco_raspberrypi4-arm64_raspberrypi4-64_edgehog-things-image_5-15-_kirkstone_1-05-00_20240829.wic.bz2",
+              "extract_size": 1736459264,
+              "extract_sha256": "ce45e95c4e0904bd99cff3d597e57a46d35cc372873109e5de2403928f7b512a",
+              "image_download_size": 306889302,
+              "image_download_sha256": "fecfdb529d78b95259157e02103a0f03aa8dcbffa418c2f474a6bdf1a5b96bd2",
+              "release_date": "2024-08-30",
+              "init_format": "systemd",
+              "devices": [
+                "pi4-64bit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Freemium and paid-for OS",
+      "description": "Freemium and paid-for digital signage, 3d printing and thin client operating systems",
+      "icon": "icons/cat_other_specific_purpose_operating_systems.png",
+      "random": false,
+      "subitems": [
+        {
+          "name": "Digital signage OS",
+          "description": "Digital signage operating systems",
+          "icon": "icons/cat_digital_signage.png",
+          "random": true,
+          "subitems": [
+            {
+              "name": "info-beamer digital signage",
+              "description": "Turn your Raspberry Pi into a professional digital signage display or video wall",
+              "icon": "https://cdn.infobeamer.com/repo.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "info-beamer OS",
+                  "description": "Recommended: Stable version for production environments.",
+                  "icon": "https://cdn.digitalsignagecontent.net/s/8fe7d1/img/os-channel.png",
+                  "url": "https://sync.info-beamer.com/os/stable/241217-d34b18/install.img.gz",
+                  "extract_size": 79691776,
+                  "extract_sha256": "96d6eb22720ee3d0a31b584202cc4b6a4a0347dc5c4e2ed66f8815af2353e55a",
+                  "image_download_size": 67529609,
+                  "release_date": "2024-12-17",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-64bit",
+                    "pi4-64bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                },
+                {
+                  "name": "info-beamer OS (testing)",
+                  "description": "This is our pre-release version. It contains the latest development work for you to check out.",
+                  "icon": "https://cdn.digitalsignagecontent.net/s/8fe7d1/img/os-channel.png",
+                  "url": "https://sync.info-beamer.com/os/testing/250506-3667e3/install.img.gz",
+                  "extract_size": 80740352,
+                  "extract_sha256": "cc68fbc5c0c70a92f201312de34df9b778d2e1062c92271c99dd2aa08565ef3f",
+                  "image_download_size": 69109020,
+                  "release_date": "2025-05-06",
+                  "init_format": "none",
+                  "devices": [
+                    "pi5-64bit",
+                    "pi4-64bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "XOGO Digital Signage",
+              "description": "Transform Your RPi into a Digital Sign",
+              "icon": "https://xogoarchive.blob.core.windows.net/public/Logo40x40.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "XOGO Signage",
+                  "description": "XOGO Signage",
+                  "icon": "https://xogoarchive.blob.core.windows.net/public/Logo40x40.png",
+                  "url": "https://rpifileshare.blob.core.windows.net/public-pi-share/rpi4-mini2b-2.105.21-144.zip",
+                  "extract_size": 2498082304,
+                  "extract_sha256": "f0a5fce764356db4f1ebb7cf0edc73649393306e843ba9401bea180fe5cdcb33",
+                  "image_download_size": 562273302,
+                  "release_date": "2022-10-31",
+                  "init_format": "none"
+                }
+              ]
+            },
+            {
+              "name": "Yodeck Digital Signage",
+              "description": "The Digital Signage platform built for the Raspberry Pi. Free and unlimited for a single screen.",
+              "icon": "https://player-image.yodeck.com/imager.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Yodeck Digital Signage Player",
+                  "description": "The latest Yodeck Player image for any Raspberry Pi. Upgrades automatically to every new release of the Yodeck Player.",
+                  "icon": "https://player-image.yodeck.com/imager.png",
+                  "url": "https://player-image.yodeck.com/RaspberryPi_Yodeck_2023-11-21.zip",
+                  "extract_size": 3498049536,
+                  "extract_sha256": "e5ed854a77efd1ebbc7238ec075769bfdbfc13225075bfc026cf16123ee9452f",
+                  "image_download_size": 1128150834,
+                  "release_date": "2023-11-21",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1Play Digital Signage",
+              "description": "Player for 1Play Digital Signage service",
+              "icon": "https://media.1play.tv/wl/media.1play.tv/logo_vertical_login.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "1Play Digital Signage (Pi1, Pi2, Pi3, Pi4)",
+                  "description": "Player for 1Play Digital Signage service.",
+                  "icon": "https://media.1play.tv/wl/media.1play.tv/logo_vertical_login.png",
+                  "url": "https://media.1play.tv/V16.zip",
+                  "extract_size": 4006400000,
+                  "extract_sha256": "5ee092670138359ae307517e1d4538399a129f1938dcebe18875b932757d2d96",
+                  "image_download_size": 1363251477,
+                  "image_download_sha256": "c059975ecee067cde45db999880d0be5532f4485b3c6e7c3f381040a62940ac9",
+                  "release_date": "2023-08-19",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Screenly Digital Signage",
+              "description": "The digital signage platform focused on security, reliability, and flexibility.",
+              "icon": "https://disk-images.screenlyapp.com/Screenly-Icon.svg",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Screenly Player (RPi-4 64bit)",
+                  "description": "Player for Screenly digital signage service.",
+                  "icon": "https://disk-images.screenlyapp.com/Screenly-Icon.svg",
+                  "url": "https://disk-images.screenlyapp.com/screenly-4.0.0-r8-pi64-stable.img.zip",
+                  "extract_size": 4675017216,
+                  "extract_sha256": "9a760f7691bcb5e796f763d925d6c2161d3b1281955424421d0afc0e681f9418",
+                  "image_download_size": 941323924,
+                  "image_download_sha256": "9db5e0d7d8a55ee93e4009ae6125b18e441655b4651c505734e20a7e70a30711",
+                  "release_date": "2025-04-23",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-64bit"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Linutop OS",
+              "description": "Digital Signage and Kiosk for the Raspberry Pi. Free Demo version",
+              "icon": "https://doc.linutop.com/raspi/imager.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "Linutop Digital Signage Player  (RPi 4/3/2/Zero 2W)",
+                  "description": "The latest Linutop Player image for any Raspberry Pi. Digital signage and Kiosk for local or distant content.",
+                  "icon": "https://doc.linutop.com/raspi/linutop.png",
+                  "url": "https://doc.linutop.com/raspi/Linutop-OS-XS-demo-raspi.zip",
+                  "extract_size": 5870976512,
+                  "extract_sha256": "ac8a74f7f2195d4667d061598dee25f0b551611368aa60a62bf578e6b7a6c2c8",
+                  "image_download_size": 2356870643,
+                  "release_date": "2025-01-20",
+                  "init_format": "none",
+                  "devices": [
+                    "pi4-32bit",
+                    "pi3-32bit",
+                    "pi2-32bit",
+                    "pi1-32bit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3D printing",
+          "description": "3D printer operating systems",
+          "icon": "icons/cat_3d_printing.png",
+          "random": true,
+          "subitems": [
+            {
+              "name": "3DPrinterOS",
+              "description": "Allows you to manage your 3D printers fleet from anywhere",
+              "icon": "https://rpi-imager.3dprinteros.com/3dprinteros.png",
+              "random": false,
+              "subitems": [
+                {
+                  "name": "3DPrinterOS",
+                  "description": "Allows you to manage your 3D printers fleet from anywhere",
+                  "icon": "https://rpi-imager.3dprinteros.com/3dprinteros.png",
+                  "url": "https://rpi-imager.3dprinteros.com/3DPrinterOS.zip",
+                  "extract_size": 4294967296,
+                  "extract_sha256": "8ad3da56aa788d805d0f5558c4dc2686bce7737cd718f7dd21f79c0f2ed44901",
+                  "image_download_size": 1058245530,
+                  "image_download_sha256": "9c0276191b7e51926bf547c2dbd37847d4c370594c3fbfaeab232a8276ac1946",
+                  "release_date": "2024-03-12",
+                  "init_format": "systemd",
+                  "devices": [
+                    "pi5-64bit",
+                    "pi4-64bit",
+                    "pi3-64bit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Android by emteria",
+          "description": "Android OS for your Raspberry Pi",
+          "icon": "https://emteria.com/hubfs/logos_emteria/rpi-imager.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "Android 15 (RPi 5) - SD Card Only",
+              "description": "Free forever Starter plan, all features and updates after signup",
+              "icon": "https://emteria.com/hubfs/logos_emteria/rpi-imager.png",
+              "url": "https://s3.emteria.com/public/rpi-imager/rpi5-15.1.0.img.gz",
+              "extract_size": 9676259328,
+              "extract_sha256": "1262739f1e501706fcec426c07bd143d87eeaf48adff0e8b8b8475e2644ef775",
+              "image_download_size": 1138764558,
+              "image_download_sha256": "af483f293f613cb620b2e8f5661cc6aadfc9908adf3c1a4d581991aea0a5180b",
+              "release_date": "2024-09-13",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit"
+              ]
+            },
+            {
+              "name": "Android 14 (RPi 5) - SD Card Only",
+              "description": "Free forever Starter plan, all features and updates after signup",
+              "icon": "https://emteria.com/hubfs/logos_emteria/rpi-imager.png",
+              "url": "https://s3.emteria.com/public/rpi-imager/rpi5-14.6.0.img.gz",
+              "extract_size": 9663676416,
+              "extract_sha256": "9eff52adc613e5b91ba90e0ff12317831b0d124aabc47cc684072dd8f2a0d54c",
+              "image_download_size": 1008938087,
+              "image_download_sha256": "fe65941af8e979dd0ad1744a7de7f8dbe9efd81d6181208f8f0a754a44c5ddca",
+              "release_date": "2024-08-21",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit"
+              ]
+            },
+            {
+              "name": "Android 14 (RPi 4B, CM4, 400) - SD Card Only",
+              "description": "Free forever Starter plan, all features and updates after signup",
+              "icon": "https://emteria.com/hubfs/logos_emteria/rpi-imager.png",
+              "url": "https://s3.emteria.com/public/rpi-imager/rpi4-14.2.0.img.gz",
+              "extract_size": 9680453632,
+              "extract_sha256": "466e28ef4d5fc62a17c62ca5605450b71df5d0ddf6e60ae841e42b0d0126b76e",
+              "image_download_size": 1046749786,
+              "image_download_sha256": "9665c83ab6e325abeb03bc84c243e9fa28d01b5702df019b18308ff2ff57ade8",
+              "release_date": "2023-11-23",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            },
+            {
+              "name": "Android 13 (RPi 4B, CM4, 400) - SD Card Only",
+              "description": "Free forever Starter plan, all features and updates after signup",
+              "icon": "https://emteria.com/hubfs/logos_emteria/rpi-imager.png",
+              "url": "https://s3.emteria.com/public/rpi-imager/rpi4-13.4.0.img.gz",
+              "extract_size": 12817793024,
+              "extract_sha256": "70f036fbabb8a71360d83ae10e6ddd1210092c638b2711f0c63ec0dee31c3e86",
+              "image_download_size": 1123500356,
+              "image_download_sha256": "0cde79d5cc1a295b9fa0163ec8eafb8ca7e4a26274c066641e15eb8d8d8cb788",
+              "release_date": "2023-07-20",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TLXOS",
+          "description": "Debian-based thin client and digital signage OS",
+          "icon": "http://rpi.thinlinx.com/NOOBS/TLX_RPi/TLXOS.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "TLXOS RPi 5.2.2 (latest)",
+              "description": "ThinLinX TLXOS for Raspberry Pi v3 and later (30-day free trial)",
+              "icon": "http://rpi.thinlinx.com/NOOBS/TLX_RPi/TLXOS.png",
+              "url": "http://rpi.thinlinx.com/rpi-imager/rpi-5.2.2.img.xz",
+              "extract_size": 2485125120,
+              "extract_sha256": "12825fc9c5f648dee566aad438b3bee55e2c039890b485ff80f8724b2c061f13",
+              "image_download_size": 656568288,
+              "release_date": "2024-11-05",
+              "init_format": "none",
+              "devices": [
+                "pi3-32bit",
+                "pi4-32bit",
+                "pi5-32bit"
+              ]
+            },
+            {
+              "name": "TLXOS RPi 5.0.2 (LTS)",
+              "description": "ThinLinX TLXOS for Raspberry Pi v2/3/4 (30-day free trial)",
+              "icon": "http://rpi.thinlinx.com/NOOBS/TLX_RPi/TLXOS.png",
+              "url": "http://rpi.thinlinx.com/rpi-imager/rpi-5.0.2.img.xz",
+              "extract_size": 1260388352,
+              "extract_sha256": "dade0dc0d3e3846b565750c0b134ae8a06f84a5db2b54e98a5cb95ab286ebca2",
+              "image_download_size": 801534424,
+              "release_date": "2024-11-05",
+              "init_format": "none",
+              "devices": [
+                "pi2-32bit",
+                "pi3-32bit",
+                "pi4-32bit"
+              ]
+            },
+            {
+              "name": "TLXOS RPi IoT 5.0.2 (LTS)",
+              "description": "ThinLinX TLXOS for Raspberry Pi v1 and Zero (30-day free trial)",
+              "icon": "http://rpi.thinlinx.com/NOOBS/TLX_RPi/TLXOS.png",
+              "url": "http://rpi.thinlinx.com/rpi-imager/rpiiot-5.0.2.img.xz",
+              "extract_size": 1260388352,
+              "extract_sha256": "0c390990ac94b296bdfefde6cf7d6f63d8cb23fbfcc02bde609ea2f6e2f43905",
+              "image_download_size": 496218924,
+              "release_date": "2024-10-31",
+              "init_format": "none",
+              "devices": [
+                "pi1-32bit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Misc utility images",
+      "description": "Bootloader EEPROM configuration, etc.",
+      "icon": "icons/cat_misc_utility_images.png",
+      "random": false,
+      "devices": [
+        "pi5-64bit",
+        "pi4-32bit",
+        "pi3-32bit",
+        "pi2-32bit",
+        "pi1-32bit"
+      ],
+      "subitems": [
+        {
+          "name": "Bootloader (Pi 5 family)",
+          "description": "Restore the factory default settings and change boot priority",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "random": false,
+          "devices": [
+            "pi5-64bit"
+          ],
+          "subitems": [
+            {
+              "name": "SD Card Boot",
+              "description": "Boot from SD Card before trying NVMe and then USB",
+              "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+              "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2025.03.10-2712/rpi-boot-eeprom-recovery-2025-03-10-2712-sd.zip",
+              "extract_size": 270532608,
+              "image_download_size": 897178,
+              "release_date": "2025-03-10",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit"
+              ]
+            },
+            {
+              "name": "NVMe/USB Boot",
+              "description": "Boot from NVMe before trying USB and then SD Card",
+              "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+              "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2025.03.10-2712/rpi-boot-eeprom-recovery-2025-03-10-2712-usb.zip",
+              "extract_size": 270532608,
+              "image_download_size": 897179,
+              "release_date": "2025-03-10",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit"
+              ]
+            },
+            {
+              "name": "Network Boot",
+              "description": "Boot from network if SD Card boot fails",
+              "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+              "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2025.03.10-2712/rpi-boot-eeprom-recovery-2025-03-10-2712-network.zip",
+              "extract_size": 270532608,
+              "image_download_size": 897188,
+              "release_date": "2025-03-10",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bootloader (Pi 4 family)",
+          "description": "Restore the factory default settings and change boot priority",
+          "icon": "https://downloads.raspberrypi.com/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+          "random": false,
+          "devices": [
+            "pi4-64bit",
+            "pi4-32bit"
+          ],
+          "subitems": [
+            {
+              "name": "SD Card Boot",
+              "description": "Boot from SD Card if available, otherwise boot from USB",
+              "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+              "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2025.02.11-2711-138c0/rpi-boot-eeprom-recovery-2025-02-11-2711-vl805-000138c0-sd.zip",
+              "extract_size": 270532608,
+              "image_download_size": 764159,
+              "release_date": "2025-02-11",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit",
+                "pi4-32bit"
+              ]
+            },
+            {
+              "name": "USB Boot",
+              "description": "Boot from USB if available, otherwise boot from SD Card",
+              "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+              "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2025.02.11-2711-138c0/rpi-boot-eeprom-recovery-2025-02-11-2711-vl805-000138c0-usb.zip",
+              "extract_size": 270532608,
+              "image_download_size": 764159,
+              "release_date": "2025-02-11",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit",
+                "pi4-32bit"
+              ]
+            },
+            {
+              "name": "Network Boot",
+              "description": "Boot from network if SD Card boot fails",
+              "icon": "https://downloads.raspberrypi.org/raspios_armhf/Raspberry_Pi_OS_(32-bit).png",
+              "url": "https://github.com/raspberrypi/rpi-eeprom/releases/download/v2025.02.11-2711-138c0/rpi-boot-eeprom-recovery-2025-02-11-2711-vl805-000138c0-network.zip",
+              "extract_size": 270532608,
+              "image_download_size": 764172,
+              "release_date": "2025-02-11",
+              "init_format": "none",
+              "devices": [
+                "pi4-64bit",
+                "pi4-32bit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PINN",
+          "description": "A multi-boot OS installer with OS admin features",
+          "icon": "http://raw.githubusercontent.com/procount/pinn-os/master/os/pinn.png",
+          "random": false,
+          "subitems": [
+            {
+              "name": "PINN",
+              "description": "A multi-boot OS installer with OS admin features p3.8.8",
+              "icon": "http://raw.githubusercontent.com/procount/pinn-os/master/os/pinn.png",
+              "url": "https://github.com/procount/pinn/releases/download/p3.8.8/pinn-lite.img.zip",
+              "extract_size": 69206016,
+              "extract_sha256": "bf5de1b25bd03586038c16c4a5c57dfa466cbf5cf5cc740a0755474823cd33d5",
+              "image_download_size": 49941463,
+              "release_date": "2024-04-07",
+              "init_format": "none",
+              "devices": [
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit",
+                "pi1-32bit"
+              ]
+            },
+            {
+              "name": "PINN",
+              "description": "A multi-boot OS installer with OS admin features p3.9.3",
+              "icon": "http://raw.githubusercontent.com/procount/pinn-os/master/os/pinn.png",
+              "url": "https://github.com/procount/pinn/releases/download/p3.9.3/pinn-lite.img.zip",
+              "extract_size": 134217728,
+              "extract_sha256": "f25094ab2e25ef03953952cff3bb963a75e5c6df2c412d8e7a37ddc3a770fe60",
+              "image_download_size": 62690237,
+              "release_date": "2024-11-22",
+              "init_format": "none",
+              "devices": [
+                "pi5-64bit",
+                "pi4-32bit",
+                "pi3-32bit",
+                "pi2-32bit",
+                "pi1-32bit"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
