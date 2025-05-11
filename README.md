@@ -3,3 +3,6 @@
 
 # How to generate an image
   > make rootfs
+
+# pi-gen
+  > https://github.com/RPi-Distro/pi-gen/tree/arm64
