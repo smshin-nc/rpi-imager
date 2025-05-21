@@ -36,7 +36,7 @@
       "name": "Nextchip APACHE5 Linux OS (64-bit)",
       "description": "RDK, SOM Reference OS (Recommended)",
       "icon": "https://raw.githubusercontent.com/smshin-nc/rpi-imager/refs/heads/main/nextchip-logo.png",
-      "url": "https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2025-05-07/2025-05-06-raspios-bookworm-arm64.img.xz",
+      "url": "https://www.dropbox.com/scl/fi/gacsojvfvf5vk2lrh9t3r/2025-05-06-raspios-bookworm-arm64.img.xz?rlkey=dvs5m4zi4e83sal7qla2acieg&e=1&st=ie0nrvoh&dl=1",
       "extract_size": 6140461056,
       "extract_sha256": "186e0033b6d0f29d972c5fa905e247330b015f9bdd14e7de616ef788d6635a68",
       "image_download_size": 1203472248,
